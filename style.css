@@ -1,14 +1,425 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* CSS Reset  */
-*,
-*::before,
-*::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --bg: #be9296;
+  --text: #1f2937;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --radius: 12px;
 }
 
-/* CSS code */
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: black;
+  font-family:"Sarabun", "Tinos", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*
+---------------------------------------------
+Header Style
+---------------------------------------------
+*/
+
+/* Desktop browser menu */
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+header img {
+  margin-left: 24px;
+  height: 24px;
+}
+
+.menu-desktop-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.menu-desktop-list a {
+  margin-right: 16px;
+  font-size: 0.85rem;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-desktop-list a:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+.menu-mobile {
+  display: none;
+}
+
+
+/*Hero section*/
+
+
+.hero-desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #fde6fc, #ffb6b6);
+  gap: 30px;
+}
+
+.hero-desktop-content {
+  flex: 1 1 48%;
+}
+.hero-desktop-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.hero-desktop-content p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.hero-desktop-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-desktop-form input,
+.hero-desktop-form select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.hero-desktop-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-desktop-buttons button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-filter-btn {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.hero-search-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.hero-desktop-tab-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero-desktop-tab-button button {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hero-desktop-img {
+  position: relative;
+  text-align: center;
+  flex: 1 1 48%;
+  position: relative;
+  text-align: center;
+}
+
+.hero-desktop-img img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/*Hero section end*/
+
+/* Our Services */
+.desktop-services-section {
+  padding: 50px 20px;
+}
+
+.desktop-services-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1f2937;
+}
+
+.desktop-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.desktop-services-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  overflow: hidden;;
+}
+
+.desktop-services-card:hover {
+  transform: translateY(-4px);
+}
+
+.desktop-services-img {
+  position: relative;
+  padding: 10px;
+}
+
+.desktop-services-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.desktop-services-info {
+  padding: 16px;
+}
+
+.desktop-services-info h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.price {
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.details, .location {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 2px 0;
+}
+
+/* Review section */
+
+.desktop-users-rv {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.desktop-users-rv-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.desktop-users-rv-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.desktop-users-rv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.desktop-users-rv-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.desktop-users-rv-item :hover {
+  transform: translateY(-4px);
+}
+
+.desktop-users-rv-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #16a34a;
+}
+
+.desktop-users-rv-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.desktop-users-rv-item p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Top caregiver section */
+
+.desktop-top-caregiver-section {
+  padding: 60px 20px;
+  background: #f9fafb;
+}
+
+.desktop-top-caregiver-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-top-caregiver-img {
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.desktop-top-caregiver-img img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.desktop-top-caregiver-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.quote-icon {
+  font-size: 40px;
+  color: #16a34a;
+  margin-bottom: 2px;
+}
+
+.top-caregiver-name {
+  font-size: 20px;
+  margin: 0;
+  color: #111827;
+}
+
+.top-caregiver-title {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.top-caregiver-text {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* why us section */
+.desktop-why-us {
+  padding: 60px 20px;
+}
+
+.desktop-why-us-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.desktop-why-us-text {
+  max-width: 600px;
+}
+
+.desktop-why-us-text h2 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.desktop-why-us-text-intro {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.desktop-why-us-feature {
+  margin-bottom: 20px;
+}
+
+.desktop-why-us h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.desktop-why-us p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.desktop-why-us-stat {
+  margin-top: 30px;
+}
+
+.btn-stat {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4;
+  cursor: default;
+}
+
+.desktop-why-us-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
