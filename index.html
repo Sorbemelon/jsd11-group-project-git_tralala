@@ -1,26 +1,234 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link href="./style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <h1>hell</h1>
-      </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<title>caregiver services platform</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		        <!--For SEO -->
+		<meta name="caregiver" content="caregiver, services, senior care">
+
+                <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./style.css" >
+        <link rel="stylesheet" type="text/css" href="./style-mobile.css" />
+
+                <!-- For tailwind -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+
+	<body>
+
+<!-- ***** Header Area Start ***** -->
+
+<!-- Navbar Start -->
+     <!-- Desktop Nav bra menu -->
+    <header class="menu-desktop">
+                <!--  Logo  -->
+        <div class="menu-desktop-logo">
+            <a href="index.html" class="logo-care">
+            <img src="./asstes/images/logo.png" alt="logo-caregiver">
+            <p><strong>Shark</strong>Caregiver</p>
+        </div>
+        </a>
+                <!--  Menu List-->
+        <div class="menu-desktop-list">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Caregiver</a>
+                <a href="#">Contact</a>
+                <a href="#">Sign in</a>
+      </div>
     </header>
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </main>
-    <footer></footer>
-  </body>
+
+    <!-- Mobile  Nav bra menu -->
+    <header class="menu-mobile">
+        <a href="index.html" class="logo-care">
+            <img src="./asstes/images/logo01.png" alt="logo-caregiver">
+            <p><strong>Shark</strong>Caregiver</p>
+                <!-- Mobile Menu List-->
+        <a href="#"><img src="./asstes/images/comment-alt.svg" alt="About Us logo mobile" /></a>
+        <a href="#"><img src="./asstes/images/service.svg" alt="Our Services logo mobile" /></a>
+        <a href="#"><img src="./asstes/images/team.svg " alt="Caregiver logo login" /></a>
+        <a href="#"><img src="./asstes/images/phone-call.svg " alt="Contact logo login" /></a>
+        <a href="#"><img src="./asstes/images/user 2.svg " alt="Sign in logo login" /></a>
+
+    </header>
+
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Main Area Start ***** -->
+
+<main>
+
+        <!--hero section -->
+
+<section class="hero-desktop">
+    <div class="hero-desktop-content">
+        <h1>ความสุขดีๆ... แค่มีคนดูแล</h1>
+        <p>ค้นหาผู้ดูแลที่เหมาะสมสำหรับคนที่คุณรัก</p>
+            <form class="hero-desktop-form">
+                <input type="text" placeholder="ค้นหาผู้ดูแล" />
+                <select class="">
+                    <option disabled selected>เลือกประเภทบริการที่ต้องการ</option>
+                    <option>บริการเยี่ยมบ้านผูู้อายุ</option>
+                    <option>แผนดูแลระยะยาว</option>
+                    <option>แผนดูแลรายชั่วโมง</option>
+                </select>
+                <div class="hero-desktop-buttons">
+                    <button type="button" class="hero-filter-btn">Filter</button>
+                    <button type="submit" class="hero-search-btn">Search</button>
+                </div>
+            </form>
+        <div class="hero-desktop-tab-button">
+                <button>Popular Search</button>
+                <button>Senior Community</button>
+                <button>Senior Activity</button>
+                <button>Senior Place</button>
+        </div>
+    </div>
+        <div class="hero-desktop-img">
+            <img src="https://thailand.generation.org/wp-content/uploads/2024/08/Final-Senior-care-professtional.png" alt="Caregiver-team" />
+        </div>
+</section>
+
+    <!-- Our Services -->
+<section class="desktop-services-section">
+        <div class="desktop-services-container">
+            <h2 class="desktop-services-title">บริการของเรา</h2>
+                <div class="desktop-services-grid">
+                        <!-- Services Card -->
+                    <div class="desktop-services-card">
+                    <div class="desktop-services-img">
+                    <img src="https://www.vnshealth.org/wp-content/smush-webp/2022/05/best-qualities-caregiving-1536x1024.jpg.webp" alt="Visit Home" />
+                    </div>
+                    <div class="desktop-services-info">
+                        <h3>เยี่ยมบ้าน</h3>
+                        <p class="price">เริ่มต้น 500 บาท</p>
+                        <p class="details">ตรวจสุขภาพ, ให้ความรู้, พูดคุย</p>
+                        <p class="location">กรุงเทพ</p>
+                    </div>
+                </div>
+                     <!-- Services Card -->
+                <div class="desktop-services-card">
+                    <div class="desktop-services-img">
+                    <img src="https://bucknerparkwayplace.org/wp-content/uploads/2023/03/What-Are-the-Duties-of-a-Respite-Caregiver.png" alt="Hourly" />
+                    </div>
+                    <div class="desktop-services-info">
+                        <h3>บริการระยะสั้น</h3>
+                        <p class="price">เริ่มต้น 600 บาท</p>
+                        <p class="details">รับดูแลผู้สูงอายุระยะตั้งแต่ 2 ชั่วโมงขึ้นไป</p>
+                        <p class="location">กรุงเทพ</p>
+                    </div>
+                </div>
+                        <!-- Services Card -->
+                <div class="desktop-services-card">
+                    <div class="desktop-services-img">
+                    <img src="https://assets.contenthub.wolterskluwer.com/api/public/content/b18f3052df5143139623db4bf6ba83ad?v=3ec1d82d&t=w768l" alt="long-term" />
+                    </div>
+                    <div class="desktop-services-info">
+                        <h3>บริการระยะยาว</h3>
+                        <p class="price">เริ่มต้น 15,000 บาท</p>
+                        <p class="details">Caregiverได้รับการอบรม และฝึกฝนมาอย่างดีด้านความรู้ ทักษะ ทัศนคติ มารยาท การพูดจา</p>
+                        <p class="location">กรุงเทพ</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- desktop Review section-->
+
+<section class="desktop-users-rv">
+  <div class="desktop-users-rv-container">
+    <h2 class="desktop-users-rv-title">Users Review</h2>
+    <p class="desktop-users-rv-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="desktop-users-rv-grid">
+      <div class="desktop-users-rv-item">
+        <div class="desktop-users-rv-icon">🏠</div>
+            <h3>Feel like home</h3>
+            <p>Suno pertemium jurat et sit wiam unrem adipiscing. Eti erat graeco.</p>
+      </div>
+
+      <div class="desktop-users-rv-item">
+        <div class="desktop-users-rv-icon">👤</div>
+        <h3>Professional</h3>
+        <p>Suno pertemium jurat et sit wiam unrem adipiscing. Eti erat graeco.</p>
+      </div>
+
+      <div class="desktop-users-rv-item">
+        <div class="desktop-users-rv-icon">❤️</div>
+        <h3>Lovely</h3>
+        <p>Suno pertemium jurat et sit wiam unrem adipiscing. Eti erat graeco.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- desktop Top caregiver section-->
+
+<section class="desktop-top-caregiver-section">
+  <div class="desktop-top-caregiver-wrapper">
+    <!-- Left: Static image -->
+    <div class="desktop-top-caregiver-img">
+      <img src="https://www.isavta.co.il/content/migrated-a779904c62a810bcaef859555e16fdc2-592.jpg" alt="top caregiver img" />
+    </div>
+
+    <!-- Right: Quote and info -->
+    <div class="desktop-top-caregiver-content">
+      <div class="quote-icon">❝</div>
+        <h3 class="top-caregiver-name">Cameron Williamson</h3>
+        <p class="top-caregiver-title">Top Caregiver</p>
+        <p class="top-caregiver-text">
+            Searches for multiplexes, property comparisons, and the loan estimator. Works great.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- desktop Why us section-->
+
+<section class="desktop-why-us">
+  <div class="desktop-why-us-wrapper">
+    <!-- Left: Text content -->
+    <div class="desktop-why-us-text">
+      <h2>ทำไมต้องเลือกเรา</h2>
+      <p class="desktop-why-us-intro">
+        Pellentesque egetaris elementum egetaris faucibus sem. Nullam egetaris at venen. Leo diam diam eget fermentum massa pretium. Mi mauris nulla ac dictum et mauris sed.
+      </p>
+      <div class="desktop-why-us-feature">
+        <h3>Trusted by Thousands</h3>
+        <p>We offer god mode service to your home.</p>
+      </div>
+
+      <div class="desktop-why-us-stat">
+        <button class="btn-stat">Booking<br><strong>Now</strong></button>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="desktop-why-us-img">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80" alt="Modern residential building" />
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ***** main Area End ***** -->
+
+
+		<footer>
+
+        </footer>
+	</body>
+
 </html>
