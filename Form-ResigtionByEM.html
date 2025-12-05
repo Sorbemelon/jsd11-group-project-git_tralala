@@ -26,7 +26,7 @@
                 <a href="index.html"><p class=" text-2xl font-semibold text-zinc-800">Tralala Prima Care</p></a>
                 <a href="index.html"><p class=" text-xl font-semibold text-zinc-500">For Senior</p></a>
             </div>
-            <ul class= "hidden xl:flex ml-auto text-lg 2xl:text-xl font-medium text-green-600 h-full *:h-full">
+            <ul class= "hidden xl:flex ml-auto text-lg 2xl:text-xl font-medium text-yellow-50 h-full *:h-full">
                 <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">หน้าแรก</a></li>
                 <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">เกี่ยวกับเรา</a></li>
                 <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">บริการของเรา</a></li>
@@ -63,36 +63,33 @@
 
     <main>
         <!-- ฟอร์มฝั่งซ้าย Start -->
-         <section>
-                <div>
-                    <h3>กรอกประวัติส่วนตัว</h3>
-                    <p><strong>ประวัติส่วนตัว(ผู้ป่วย)</strong></p>
-                    <form>
+         <section class="flex">
+                <div class="w-[90%] bg-yellow-200 my-4 mx-auto rounded-[2rem]">
+                    <h3 class="block text-2xl self-center font-semibold text-center pt-6 pb-3">กรอกประวัติส่วนตัว</h3>
+                    <p class="p-5 pb-2"><strong>ประวัติส่วนตัว(ผู้ป่วย)</strong></p>
+                    <form class="p-5">
                         <p>ชื่อ</p>
-                            <input type="text" id="Fname01=" name="Fname01">
+                            <input class=" bg-slate-200 border-2 ml-3  " type="text" id="Fname01=" name="Fname01">
                         <p>นามสกุล</p>
-                            <input type="text" id="Lnme01" name="Lnme01">
+                            <input class="bg-slate-200 border-2 ml-3"  type="text" id="Lnme01" name="Lnme01">
                         <p>วันเกิด</p>
-                            <input type="date" id="Birthday" name="Birthday">
+                            <input class="bg-slate-200 border-2 ml-3 w-46 " class="appearance-none type="date" id="Birthday" name="Birthday">
                         <p>ที่อยู่</p>
-                            <input type="text" id="Address" name="Address">
+                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Address" name="Address">
                         <p>อาการป่วย</p>
-                            <input type="text" id="State" name="State">
+                            <input class="bg-slate-200 border-2 ml-3" type="text" id="State" name="State">
                         <p>เบอร์โทรศัพท์</p>
-                            <input type="tel" id="Phone-me" name="Phone-me"maxlength="10">
+                            <input class="bg-slate-200 border-2 ml-3" type="tel" id="Phone-me" name="Phone-me"maxlength="2border-20">
                         <p>สิ่งที่ต้องการให้ดูแลพิเศษ</p>
-                            <input type="text" id="Takecare" name="Takecare">
+                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Takecare" name="Takecare">
                         <p>ยาที่รับประทานประจำ</p>
-                            <input type="text" id="Medicine" name="Medicine">
+                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Medicine" name="Medicine">
                         <p>เพิ่มเติม</p>
-                            <input type="text" id="Detail" name="Detail">
+                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Detail" name="Detail">
                     </form>
-
-                    <br>
-
-                     <div>
-                        <p>Upload a image</p>
-                        <input type="file" id="myimage" name="myimage" accept=".jpg, .png">
+                     <div class="flex flex-col items-center relative ">
+                        <p></p>
+                        <input class="absolute bottom-110 left-65 h-25 w-30 px-1 py-10  bg-gray-300 " type="file" id="myimage" name="myimage" accept=".jpg, .png">
                     </div>
                 </div>
         </section>
