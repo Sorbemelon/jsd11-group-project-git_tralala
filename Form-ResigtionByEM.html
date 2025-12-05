@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From-Resigtion</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./style-form-res.css" > -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <style type="text/tailwindcss">
+			@theme {
+				--font-noto: "Noto Sans Thai", sans-serif;
+				--font-inter: "Inter", sans-serif;
+			}
+        </style> -->
+</head>
+<body class="w-screen bg-emerald-400">
+    <header class="mb-20">
+        <nav class="flex items-center fixed top-0 h-16 bg-yellow-300 w-full md:justify-start ">
+            <div class="sm:ml-2 h-full min-w-16">
+                <a href="index.html"><img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon-logo" class="w-16"/></a>
+            </div>
+            <div class="flex flex-col items-start m-2 min-w-64">
+                <a href="index.html"><p class=" text-2xl font-semibold text-zinc-800">Tralala Prima Care</p></a>
+                <a href="index.html"><p class=" text-xl font-semibold text-zinc-500">For Senior</p></a>
+            </div>
+            <ul class= "hidden xl:flex ml-auto text-lg 2xl:text-xl font-medium text-green-600 h-full *:h-full">
+                <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">หน้าแรก</a></li>
+                <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">เกี่ยวกับเรา</a></li>
+                <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">บริการของเรา</a></li>
+                <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">เจ้าหน้าที่ของเรา</a></li>
+                <li class="min-w-16 px-2 2xl:px-6 "><a href="" class="h-full flex items-center">ติดต่อเรา</a></li>
+            </ul>
+            <ul class="flex ml-auto gap-1 md:gap-4 sm:text-black-600">
+                <li class="hidden sm:flex self-center text-left max-w-40">
+                    <img src="asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0"/>
+                    <span class="hidden md:block ml-2 md:text-base">086-858-8666</span>
+                </li>
+                <li class="flex self-center outline-2 p-2 w-10 bg-white rounded-[75%] ">
+                    <img src="asstes/images/user 2.svg" class="w-full "/></li>
+                <li class="hidden sm:flex self-center outline-2 py-2 px-6 bg-white rounded-full sm:mr-2">
+                    <a href="">เข้าสู่ระบบ</a></li>
+            </ul>
+            <div class="ml-2 sm:ml-4 flex flex-col gap-2 xl:hidden self-center py-2 pr-4 text-2xl hover:cursor-pointer">
+                <div class="w-9 h-1 bg-black"></div>
+                <div class="w-9 h-1 bg-black"></div>
+                <div class="w-9 h-1 bg-black"></div>
+                <div class="group fixed w-full hover:w-70 hover:right-0">
+                    <div class="h-[46px] bg-none"></div>
+                        <ul class=" group-hover:flex flex-col *:py-4 *:text-black" >
+                            <li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-orange-500 group-hover:bg-yellow-300 group-hover:outline-2 outline-yellow-200><a href="">หน้าแรก</a></li>
+                            <li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-orange-500 group-hover:bg-yellow-300 group-hover:outline-2 outline-yellow-200><a href="">เกี่ยวกับเรา</a></li>
+                            <li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-orange-500 group-hover:bg-yellow-300 group-hover:outline-2 outline-yellow-200><a href="">บริการของเรา</a></li>
+                            <li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-orange-500 group-hover:bg-yellow-300 group-hover:outline-2 outline-yellow-200><a href="">เจ้าหน้าที่ของเรา</a></li>
+                            <li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-orange-500 group-hover:bg-yellow-300 group-hover:outline-2 outline-yellow-200><a href="">ติดต่อเรา</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ฟอร์มฝั่งซ้าย Start -->
+         <section>
+                <div>
+                    <h3>กรอกประวัติส่วนตัว</h3>
+                    <p><strong>ประวัติส่วนตัว(ผู้ป่วย)</strong></p>
+                    <form>
+                        <p>ชื่อ</p>
+                            <input type="text" id="Fname01=" name="Fname01">
+                        <p>นามสกุล</p>
+                            <input type="text" id="Lnme01" name="Lnme01">
+                        <p>วันเกิด</p>
+                            <input type="date" id="Birthday" name="Birthday">
+                        <p>ที่อยู่</p>
+                            <input type="text" id="Address" name="Address">
+                        <p>อาการป่วย</p>
+                            <input type="text" id="State" name="State">
+                        <p>เบอร์โทรศัพท์</p>
+                            <input type="tel" id="Phone-me" name="Phone-me"maxlength="10">
+                        <p>สิ่งที่ต้องการให้ดูแลพิเศษ</p>
+                            <input type="text" id="Takecare" name="Takecare">
+                        <p>ยาที่รับประทานประจำ</p>
+                            <input type="text" id="Medicine" name="Medicine">
+                        <p>เพิ่มเติม</p>
+                            <input type="text" id="Detail" name="Detail">
+                    </form>
+
+                    <br>
+
+                     <div>
+                        <p>Upload a image</p>
+                        <input type="file" id="myimage" name="myimage" accept=".jpg, .png">
+                    </div>
+                </div>
+        </section>
+         <!-- ฟอร์มฝั่งซ้าย End -->
+
+        <!-- ฟอร์มฝั่งขวา Start -->
+        <section>
+            <div>
+                <p><strong>ประวัติส่วนตัว(ญาติผู้ป่วย)</strong></p>
+                <form>
+                    <p>ชื่อ</p>
+                        <label for="Fname02">
+                        <input type="text" id="Fname02" name="Fname02">
+                        </label>
+                    <p>นามสกุล</p>
+                        <label for="Lname02">
+                        <input type="text" id="Lname02" name="Lname02">
+                        </label>
+                    <p>เบอร์โทรศัพท์</p>
+                        <label for="Phone-co">
+                        <input type="tel" id="Phone-co" name="Phone-co"maxlength="10">
+                        </label>
+                    <p>ความสัมพันธ์กับผู้ป่วย</p>
+                        <label for="Relationship">
+                            <select name="Relationship" id="Relationship">
+                            <option value="Select">Section</option>
+                            <option value="child">ลูก</option>
+                            <option value="relative">พี่น้อง</option>                                <option value="grandchild">หลาน</option>
+                            <option value="friend">เพื่อน</option>
+                            </select>
+                        </label>
+                </form>
+
+                <br>
+
+                <div>
+                    <p>Upload a image</p>
+                    <input type="file" id="myimage" name="myimage" accept=".jpg, .png">
+                </div>
+            </div>
+            <div>
+                <button>บันทึก</button>
+            </div>
+        </section>
+        <!-- ฟอร์มฝั่งขวา End -->
+    </main>
+        <footer>
+            <section>
+                <p>© 2025 Git Status Tralala. All rights reserved</p>
+                <div>
+                    <span>Terms</span>
+                    <span>Privacy</span>
+                </div>
+            </section>
+        </footer>
+</body>
+</html>
