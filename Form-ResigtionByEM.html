@@ -18,7 +18,7 @@
 </head>
 <body class="w-screen bg-emerald-400">
     <header class="mb-20">
-        <nav class="flex items-center fixed top-0 h-16 bg-yellow-300 w-full md:justify-start ">
+        <nav class="flex items-center fixed top-0 h-16 bg-yellow-300 w-full md:justify-center overflow-hidden ">
             <div class="sm:ml-2 h-full min-w-16">
                 <a href="index.html"><img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon-logo" class="w-16"/></a>
             </div>
@@ -63,87 +63,86 @@
 
     <main>
         <!-- ฟอร์มฝั่งซ้าย Start -->
-         <section class="flex">
-                <div class="w-[90%] bg-yellow-200 my-4 mx-auto rounded-[2rem]">
-                    <h3 class="block text-2xl self-center font-semibold text-center pt-6 pb-3">กรอกประวัติส่วนตัว</h3>
-                    <p class="p-5 pb-2"><strong>ประวัติส่วนตัว(ผู้ป่วย)</strong></p>
-                    <form class="p-5">
-                        <p>ชื่อ</p>
-                            <input class=" bg-slate-200 border-2 ml-3  " type="text" id="Fname01=" name="Fname01">
-                        <p>นามสกุล</p>
-                            <input class="bg-slate-200 border-2 ml-3"  type="text" id="Lnme01" name="Lnme01">
-                        <p>วันเกิด</p>
-                            <input class="bg-slate-200 border-2 ml-3 w-46 " class="appearance-none type="date" id="Birthday" name="Birthday">
-                        <p>ที่อยู่</p>
-                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Address" name="Address">
-                        <p>อาการป่วย</p>
-                            <input class="bg-slate-200 border-2 ml-3" type="text" id="State" name="State">
-                        <p>เบอร์โทรศัพท์</p>
-                            <input class="bg-slate-200 border-2 ml-3" type="tel" id="Phone-me" name="Phone-me"maxlength="2border-20">
-                        <p>สิ่งที่ต้องการให้ดูแลพิเศษ</p>
-                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Takecare" name="Takecare">
-                        <p>ยาที่รับประทานประจำ</p>
-                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Medicine" name="Medicine">
-                        <p>เพิ่มเติม</p>
-                            <input class="bg-slate-200 border-2 ml-3" type="text" id="Detail" name="Detail">
-                    </form>
-                     <div class="flex flex-col items-center relative ">
-                        <p></p>
-                        <input class="absolute bottom-110 left-65 h-25 w-30 px-1 py-10  bg-gray-300 " type="file" id="myimage" name="myimage" accept=".jpg, .png">
+         <section class="flex flex-col px-2 lg:px-15 w-full justify-center">
+                <div class=" bg-yellow-300 mx-5 mb-5 rounded-[2rem] lg:pl-15 pt-10">
+                <h3 class="block text-2xl self-center font-semibold text-center pt-6 pb-10">กรอกประวัติส่วนตัว</h3>
+                <div class=" flex flex-col md:flex-row justify-center ">
+                    <div class="flex flex-col md:pr-30 md:50 pb-4">
+                        <p class=" pl-5 pb-2 text-lg font-semibold">ประวัติส่วนตัว(ผู้ป่วย)</p>
+                        <form class="p-5 px ">
+                            <p>ชื่อ</p>
+                                <input class=" bg-slate-200 border-2 ml-3 w-[80%] " type="text" id="Fname01=" name="Fname01">
+                            <p>นามสกุล</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%] "  type="text" id="Lnme01" name="Lnme01">
+                            <p>วันเกิด</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" class="appearance-none type=" date id="Birthday" name="Birthday">
+                            <p>ที่อยู่</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="Address" name="Address">
+                            <p>อาการป่วย</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="State" name="State">
+                            <p>เบอร์โทรศัพท์</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="tel" id="Phone-me" name="Phone-me"maxlength="2border-20">
+                            <p>สิ่งที่ต้องการให้ดูแลพิเศษ</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="Takecare" name="Takecare">
+                            <p>ยาที่รับประทานประจำ</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="Medicine" name="Medicine">
+                            <p>เพิ่มเติม</p>
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="Detail" name="Detail">
+                        </form>
+                        <div class="flex flex-col ml-[35%] md:left-35 md:-top-125 md:relative">
+                            <!-- <input class="absolute bottom-100 left-65 h-25 w-30 px-1 py-10  bg-gray-300 sm: " type="file" id="myimage" name="myimage" accept=".jpg, .png"> -->
+                            <label class="w-20 h-20 py-8 text-sm text-center rounded-[10%] bg-slate-300" for="myimage"> อัปโหลดรูป</label>
+                        </div>
                     </div>
-                </div>
-        </section>
          <!-- ฟอร์มฝั่งซ้าย End -->
 
-        <!-- ฟอร์มฝั่งขวา Start -->
-        <section>
-            <div>
-                <p><strong>ประวัติส่วนตัว(ญาติผู้ป่วย)</strong></p>
-                <form>
-                    <p>ชื่อ</p>
-                        <label for="Fname02">
-                        <input type="text" id="Fname02" name="Fname02">
-                        </label>
-                    <p>นามสกุล</p>
-                        <label for="Lname02">
-                        <input type="text" id="Lname02" name="Lname02">
-                        </label>
-                    <p>เบอร์โทรศัพท์</p>
-                        <label for="Phone-co">
-                        <input type="tel" id="Phone-co" name="Phone-co"maxlength="10">
-                        </label>
-                    <p>ความสัมพันธ์กับผู้ป่วย</p>
-                        <label for="Relationship">
-                            <select name="Relationship" id="Relationship">
-                            <option value="Select">Section</option>
-                            <option value="child">ลูก</option>
-                            <option value="relative">พี่น้อง</option>                                <option value="grandchild">หลาน</option>
-                            <option value="friend">เพื่อน</option>
-                            </select>
-                        </label>
-                </form>
-
-                <br>
-
-                <div>
-                    <p>Upload a image</p>
-                    <input type="file" id="myimage" name="myimage" accept=".jpg, .png">
+         <!-- ฟอร์มฝั่งขวา Start -->
+                    <div class="w-auto md:px-35">
+                        <p class="text-lg font-semibold pl-5 pb-2">ประวัติส่วนตัว(ญาติผู้ป่วย)</p>
+                        <form class="p-5">
+                            <p>ชื่อ</p>
+                                <label for="Fname02">
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="Fname02" name="Fname02">
+                                </label>
+                            <p>นามสกุล</p>
+                                <label for="Lname02">
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="text" id="Lname02" name="Lname02">
+                                </label>
+                            <p>เบอร์โทรศัพท์</p>
+                                <label for="Phone-co">
+                                <input class="bg-slate-200 border-2 ml-3 w-[80%]" type="tel" id="Phone-co" name="Phone-co"maxlength="10">
+                                </label>
+                            <p>ความสัมพันธ์กับผู้ป่วย</p>
+                                <label class="bg-slate-200 border-2 ml-3 w-[80%]" for="Relationship">
+                                    <select name="Relationship" id="Relationship">
+                                    <option value="Select">Section</option>
+                                    <option value="child">ลูก</option>
+                                    <option value="relative">พี่น้อง</option>
+                                    <option value="grandchild">หลาน</option>
+                                    <option value="friend">เพื่อน</option>
+                                    </select>
+                                </label>
+                        </form>
+                        <div class="flex flex-col ml-[35%] md:left-35 md:-top-60 md:relative">
+                            <label class="w-20 h-20 py-8 text-sm text-center rounded-[10%] bg-slate-300" for="myimage"> อัปโหลดรูป</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <button>บันทึก</button>
-            </div>
-        </section>
-        <!-- ฟอร์มฝั่งขวา End -->
-    </main>
-        <footer>
-            <section>
-                <p>© 2025 Git Status Tralala. All rights reserved</p>
-                <div>
-                    <span>Terms</span>
-                    <span>Privacy</span>
+                <div class="px-[35%] py-5 w-auto md:px-[80%]" >
+                    <button class="bg-green-400 w-20 border-1 rounded-2xl ">บันทึก</button>
+                </div>
                 </div>
             </section>
-        </footer>
+        <!-- ฟอร์มฝั่งขวา End -->
+    </main>
+    <footer class="w-full h-20 bg-white pl-[10%] pt-3">
+        <section class="">
+            <p>© 2025 Git Status Tralala. All rights reserved</p>
+            <div class="">
+                <span>Terms</span>
+                <span>Privacy</span>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
