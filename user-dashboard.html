@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">        <!-- Tailwindcss cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<style type="text/tailwindcss">
+            @theme {
+				--font-noto: "Noto Sans Thai", sans-serif;
+				--font-inter: "Inter", sans-serif;
+            }
+         </style>
+  </head>
+  <body class="w-screen bg-pink-200">
+    <header>
+        <nav class="w-full h-16  shadow-md bg-[#ffff] flex justify-between items-center " >
+            <!-- w-full h-16  shadow-md bg-[#ffff] flex justify-between items-center  -->
+             <div class="sm:ml-2 h-full min-w-16 hover:cursor-pointer flex items-center">
+            <a href="index.html"><img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16"></a>
+            <a href="#"class=" text-xl text-black font-bold ">Care Giver</a>
+             </div>
+            <ul class="flex *:mx-5"> 
+                <li><a href="#">หน้าแรก </a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+               <li><a href="#">บริการของเรา</a></li>
+               <li><a href="#">เจ้าหน้าที่ของเรา</a></li>
+               <li><a href="#">ติดต่อเรา</a></li>
+               <li><a href="#">0868588666</a></li>
+                <button class=" py-2 px-6 outline-1 rounded-full">เข้าสู่ระบบ</button>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-7xl mx-auto">
+        <!-- Header  -->
+        <h1 className="text-2xl font-bold justify-center items-center text-gray-800 mb-2">Health Overview</h1>
+        <p className="text-center justify-center text-gray-500 mb-8">August 12, 2024</p>
+      </div>
+      <div class="bg-white max-w-xs m-10 p-3 rounded-lg shadow-xl/20">
+        <img src=""
+        <h2>Somsri N Ayutthaya</h2>
+        <p className="text-sm text-gray-500">วันเกิด 12 ธันวาคม 1954</p>
+        <p className="text-sm text-gray-500">อายุ 71 ปี</p>
+        <p className="text-sm text-gray-500">เพศ หญิง</p>
+      </div>
+      <div class="grid grid-rows-4 gap-4"></div>
+        <p class="bg-white max-w-32 max-h-full rounded-lg ">Blood Sugar</p>
+        <p class="bg-white max-w-32 max-h-full rounded-lg">Hearth Rate</p>
+        <p class="bg-white max-w-32 max-h-full rounded-lg">Blood Pressure</p>
+        
+        </main>
+         
+  </body>
+</html>
+
+    
