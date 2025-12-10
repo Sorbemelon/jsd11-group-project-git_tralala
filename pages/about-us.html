@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Sign Up</title>
+		<title>About Us</title>
 		<!-- Import google font - Noto Sans Thai, and Inter -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 			}
         </style>
 	</head>
-	<body class="max-w-screen h-[calc(100dvh-112px)] bg-[url(../asstes/images/senior_community_mobile.png)] sm:bg-[url(../asstes/images/senior_community.png)] bg-cover bg-center">
+	<body class="max-w-screen h-[calc(100dvh-112px)] bg-[#FFE5E8]">
 		<!-- Navbar - Desktop & Mobile -->
 		<header class="mb-16">
 			<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter">
@@ -95,7 +95,7 @@
 						<!-- Hidden Menu, Extend when Hover -->
 						<ul class="group-hover:flex flex-col *:py-4 *:text-gray-800">
 							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
-								<a href="">
+								<a href="../index.html">
 									หน้าแรก
 								</a>
 							</li>
@@ -125,57 +125,27 @@
 			</nav>
 		</header>
 		<!-- End Navbar -->
-    
-		<main class="flex justify-center items-center min-h-full bg-gradient-to-b from-[rgba(255,255,255,0.5)] to-pink-300">
-      <section class="flex w-full justify-center">
-        <div class="flex flex-col bg-[rgba(255,255,255,0.9)] w-[90%] sm:w-115 p-8 rounded-3xl shadow-lg font-noto *:w-full">
-          <h1 class="text-3xl font-bold text-center mb-8">สมัครสมาชิก</h1>
-          <form class="space-y-6 text-xl font-semibold">
-            <div class="flex flex-col md:flex-row md:items-center md:gap-4">
-              <label for="username" class="w-full md:w-1/4 text-gray-700">
-                ชื่อผู้ใช้
-              </label>
-              <input
-                id="username"
-                name="username"
-                type="text"
-                placeholder="เบอร์โทรศัพท์/อีเมล"
-                class="border-b border-gray-400 focus:border-black outline-none w-full py-2"
-              />
-            </div>
-            <div class="flex flex-col md:flex-row md:items-center md:gap-4">
-              <label for="password" class="w-full md:w-1/4 text-gray-700">
-                รหัสผ่าน
-              </label>
-
-              <div class="relative w-full">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  placeholder="******"
-                  class="border-b border-gray-400 focus:border-black outline-none w-full py-2"
-                />
-              </div>
-            </div>
-            <button
-              type="submit"
-              class="w-full bg-green-300 hover:bg-green-400 text-gray-800 hover:text-white py-3 rounded-lg mt-8 hover:cursor-pointer"
-            >
-              ดำเนินการต่อ
-            </button>
-
-            <button
-              type="button"
-              class="w-full border border-gray-300 rounded-lg py-3 flex justify-center items-center gap-2 hover:bg-sky-100 hover:cursor-pointer"
-            >
-              <img src="https://www.google.com/favicon.ico" class="w-7" />
-              ดำเนินการต่อด้วย Google
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
+		<main class="min-h-full">
+            <section class="flex">
+                <div class="flex flex-col items-center bg-white my-4 mx-auto w-[90%] rounded-[3rem] font-noto">
+					<h1 class="text-center py-4 px-10 font-bold text-3xl">
+						เกี่ยวกับเรา
+					</h1>
+					<div class="flex flex-col items-center pb-4">
+						<h2 class="pb-4 text-2xl font-semibold text-indigo-900">Git Status Trala @JSD11</h2>
+						<div class=" px-4 max-w-100">
+							<img src="../asstes/images/git_status_tralala_group.png" class="w-full rounded-3xl border-3 border-red-200" />
+						</div>
+						<p class="w-fit mt-6 mr-auto rounded-xl bg-sky-50 px-3 py-2 mx-auto text-base text-black">
+							ร่าเริง แจ่มใส ใส่ใจ เพื่อนทุกคน
+						</p>
+					</div>
+					<div>
+						<button class="block mx-auto mb-4 rounded-3xl bg-violet-200 px-3 py-2 text-xl font-semibold text-gray-800 outline-1 outline-violet-400 hover:cursor-pointer hover:bg-violet-500 hover:text-gray-100">กลับสู่หน้าหลัก</button>
+					</div>
+                </div>
+            </section>
+		</main>
 		<footer class="relative bottom-0 w-full bg-white">
 			<section class="flex h-12 p-4 text-zinc-500">
 				<p>© 2025 Git Status Tralala. All rights reserved</p>
@@ -185,5 +155,5 @@
 				</div>
 			</section>
 		</footer>
-  </body>
+	</body>
 </html>
