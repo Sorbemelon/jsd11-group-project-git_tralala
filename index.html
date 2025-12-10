@@ -1,285 +1,363 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <title>Caregiver Services Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-
-
-<!-- ================================
-     HEADER (Desktop + Mobile)
-================================ -->
- <!-- Desktop Nav bra menu -->
-
- <body class="w-screen bg-[#FFE5E8]">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Tralala Prima Care</title>
+		<!-- Import google font - Noto Sans Thai, and Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+		<!-- Tailwindcss cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Tailwindcss @theme -->
+		<style type="text/tailwindcss">
+			@theme {
+				--font-noto: "Noto Sans Thai", sans-serif;
+				--font-inter: "Inter", sans-serif;
+			}
+    </style>
+	</head>
+	<body class="max-w-screen h-[calc(100dvh-112px)] bg-[#FFE5E8]">
+		<!-- Navbar - Desktop & Mobile -->
 		<header class="mb-16">
-			<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter">
-				<div class="sm:ml-2 h-full min-w-16 hover:cursor-pointer">
-					<a href="index.html"><img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16"></a>
+			<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter z-99">
+				<!-- Logo and Name -->
+				<div class="h-full min-w-16 sm:ml-2 hover:cursor-pointer">
+					<a href=".index.html">
+						<img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16">
+					</a>
 				</div>
-				<div class="flex flex-col items-start min-w-64 m-2 hover:cursor-pointer">
-					<a href="index.html"><p class="text-3xl font-semibold text-zinc-800 ">Tralala Prima Care</p></a>
-					<a href="index.html"><p class="text-xl font-semibold text-zinc-600">For Senior</p></a>
+				<div class="flex flex-col items-start m-2 md:min-w-64 hover:cursor-pointer">
+					<a href="index.html">
+						<p class="text-xl font-semibold text-zinc-800 md:text-3xl">
+							Tralala Prima Care
+						</p>
+					</a>
+					<a href="index.html">
+						<p class="text-lg font-semibold text-zinc-600">
+							For Senior
+						</p>
+					</a>
 				</div>
-
-    <!--  Menu List-->
-				<ul class="hidden xl:flex ml-auto text-lg 2xl:text-xl font-medium text-zinc-600 font-noto h-full *:h-full">
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">หน้าแรก</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">เกี่ยวกับเรา</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">บริการของเรา</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">เจ้าหน้าที่ของเรา</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">ติดต่อเรา</a></li>
+				<!-- Extended Menu List -->
+				<ul class="hidden xl:flex h-full ml-auto text-lg font-medium text-zinc-600 font-noto 2xl:text-xl *:h-full">
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="index.html" class="h-full flex items-center">
+							หน้าแรก
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="pages/about-us.html" class="h-full flex items-center">
+							เกี่ยวกับเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="index.html#service" class="h-full flex items-center">
+							บริการของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="" class="h-full flex items-center">
+							ผู้ดูแลของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="" class="h-full flex items-center">
+							ติดต่อเรา
+						</a>
+					</li>
 				</ul>
-    <!--  Mobile Navbar-->
-
-				<ul class="flex ml-auto gap-1 md:gap-4 sm:text-black-600 font-noto">
-					<li class="hidden sm:flex self-center text-center max-w-40 hover:cursor-pointer hover:font-bold"><img src="asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0"><span class="hidden md:block ml-2 md:text-base">086-858-8666</span></li>
-					<li class="flex self-center outline-1 p-2 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold"><img src="asstes/images/user 2.svg" class="w-full"></li>
-					<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100"><a href="">เข้าสู่ระบบ</a></li>
+				<!-- Contact and Sign-in -->
+				<ul class="flex gap-1 ml-auto sm:text-black-600 md:gap-4 font-noto">
+					<li class="hidden sm:flex max-w-40 self-center text-center hover:font-bold hover:cursor-pointer">
+						<img src="asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0">
+						<span class="hidden md:block ml-2 md:text-base">
+							086-858-8666
+						</span>
+					</li>
+					<li class="flex self-center outline-1 p-2 mr-2 md:mr-0 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold">
+						<img src="asstes/images/user 2.svg" class="w-full">
+					</li>
+					<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100">
+						<a href="">
+							เข้าสู่ระบบ
+						</a>
+					</li>
 				</ul>
-				<div class="ml-2 sm:ml-4 flex flex-col gap-2 xl:hidden self-center py-2 pr-4 text-2xl font-noto hover:cursor-pointer">
+				<!-- Hamburger Menu -->
+				<div class="flex flex-col gap-2 xl:hidden self-center ml-2 py-2 pr-4 text-2xl font-noto sm:ml-4 hover:cursor-pointer">
 					<div class="w-9 h-1 bg-black"></div>
 					<div class="w-9 h-1 bg-black"></div>
 					<div class="w-9 h-1 bg-black"></div>
-					<div class="group fixed w-full hover:w-70 hover:right-0">
-
-    <!--  Menu List-->
+					<div class="group fixed top-0 h-16 w-full pt-5 hover:w-70 hover:right-0 *:hidden hover:*:block">
 						<div class="h-[46px] bg-none"></div>
+						<!-- Hidden Menu, Extend when Hover -->
 						<ul class="group-hover:flex flex-col *:py-4 *:text-gray-800">
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">หน้าแรก</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">เกี่ยวกับเรา</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">บริการของเรา</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">เจ้าหน้าที่ของเรา</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200 rounded-bl-3xl"><a href="">ติดต่อเรา</a></li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="index.html">
+									หน้าแรก
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="pages/about-us.html">
+									เกี่ยวกับเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="index.html#service">
+									บริการของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="">
+									ผู้ดูแลของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="">
+									ติดต่อเรา
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
+		<!-- End Navbar -->
 
+		<main class="min-h-full">
+      <!-- ================================
+          HERO SECTION
+      ================================ -->
+      <section class="flex h-[calc(100dvh-64px)] w-full font-inter bg-[url(asstes/images/section1-bg.png)] bg-cover bg-position-[center_left_40%] md:bg-center">
+        <div class=" absolute w-full h-80 bg-gradient-to-b from-white to-[rgba(255,255,255,0)]"></div>
+        <div class=" absolute w-full h-[calc(100dvh-64px)] bg-radial-[at_0%_0%] from-[rgba(255,255,255,0)] via-[rgb(244, 168, 255,0.1)] via-70% to-pink-300"></div>
+        <div class="flex flex-col md:flex-row md:gap-8 justify-between w-full px-4 pb-10 md:pl-30 bg-radial-[at_100%_100%] from-[rgba(255,255,255,0.1)] via-[rgba(255,255,255,0)] via-30% to-white z-1">
+          <!-- Left content -->
+          <div class="flex flex-col md:w-[60%] text-pretty font-noto">
+            <h1 class="text-4xl md:text-7xl font-bold leading-tight pt-8 md:pt-12 text-gray-700">
+              ความสุขดีๆ... แค่มีคนดูแล
+            </h1>
+            <p class="mt-3 text-2xl text-gray-700 md:pt-4 md:text-3xl">
+              ค้นหาผู้ดูแลที่เหมาะสมสำหรับคนที่คุณรัก
+            </p>
 
-<div class="h-20"></div> <!-- spacing after fixed header -->
+            <!-- Search box -->
+            <form class="md:w-[40%] mt-6 space-y-4 md:mt-20">
+              <input 
+                type="text" 
+                placeholder="ค้นหาผู้ดูแล"
+                class="w-full border border-gray-300 rounded-xl p-3 bg-white focus:ring-2 focus:ring-sky-400"
+              />
 
+              <select class="w-full border border-gray-300 rounded-xl p-3 bg-white focus:ring-2 focus:ring-sky-400">
+                <option disabled selected>เลือกประเภทบริการ</option>
+                <option>บริการเยี่ยมบ้าน</option>
+                <option>แผนดูแลระยะยาว</option>
+                <option>แผนดูแลรายชั่วโมง</option>
+              </select>
 
-<!-- ================================
-     HERO SECTION
-================================ -->
-<section class="max-w-screen-xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
-  
-  <!-- Left content -->
-  <div class="text-pretty">
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-        ความสุขดีๆ... แค่มีคนดูแล
-      </h1>
-      <p class="mt-3 text-lg text-gray-600">
-      ค้นหาผู้ดูแลที่เหมาะสมสำหรับคนที่คุณรัก
-    </p>
+              <div class="flex gap-3">
+                <button type="button" class="w-full md:w-25 py-3 rounded-2xl bg-amber-100 hover:bg-amber-300">
+                  ตัวกรอง
+                </button>
+                <button type="submit" class="w-full md:w-25 py-3 rounded-2xl bg-sky-500 text-white hover:bg-sky-600">
+                  ค้นหา
+                </button>
+              </div>
+            </form>
 
-    <!-- Search box -->
-    <form class="mt-6 space-y-4">
-      <input 
-        type="text" 
-        placeholder="ค้นหาผู้ดูแล"
-        class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-sky-400"
-      />
+            <!-- tabs -->
+            <div class="flex flex-wrap gap-3 mt-8">
+              <button class="px-4 py-2 bg-gray-50 rounded-full outline-1 outline-violet-200 hover:cursor-pointer hover:bg-violet-500 hover:text-white">ยอดนิยม</button>
+              <button class="px-4 py-2 bg-gray-50 rounded-full outline-1 outline-violet-200 hover:cursor-pointer hover:bg-violet-500 hover:text-white">คอมมูนิตี้</button>
+              <button class="px-4 py-2 bg-gray-50 rounded-full outline-1 outline-violet-200 hover:cursor-pointer hover:bg-violet-500 hover:text-white">กิจกรรม</button>
+              <button class="px-4 py-2 bg-gray-50 rounded-full outline-1 outline-violet-200 hover:cursor-pointer hover:bg-violet-500 hover:text-white">สถานที่แนะนำ</button>
+            </div>
+          </div>
 
-      <select class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-sky-400">
-        <option disabled selected>เลือกประเภทบริการ</option>
-        <option>บริการเยี่ยมบ้าน</option>
-        <option>แผนดูแลระยะยาว</option>
-        <option>แผนดูแลรายชั่วโมง</option>
-      </select>
-
-      <div class="flex gap-3">
-        <button type="button" class="px-5 py-3 rounded-xl border border-gray-300 hover:bg-gray-100">
-          Filter
-        </button>
-        <button type="submit" class="px-5 py-3 rounded-xl bg-sky-500 text-white hover:bg-sky-600">
-          Search
-        </button>
-      </div>
-    </form>
-
-    <!-- tabs -->
-    <div class="flex flex-wrap gap-3 mt-6">
-      <button class="px-4 py-2 bg-gray-200 rounded-full hover:bg-sky-100">Popular Search</button>
-      <button class="px-4 py-2 bg-gray-200 rounded-full hover:bg-sky-100">Community</button>
-      <button class="px-4 py-2 bg-gray-200 rounded-full hover:bg-sky-100">Activity</button>
-      <button class="px-4 py-2 bg-gray-200 rounded-full hover:bg-sky-100">Senior Place</button>
-    </div>
-  </div>
-
-  <!-- Image -->
-  <div>
-    <img 
-      src="https://thailand.generation.org/wp-content/uploads/2024/08/Final-Senior-care-professtional.png"
-      class="rounded-2xl shadow-lg"
-    />
-  </div>
-
-</section>
-
-<!-- ================================
-     SERVICES SECTION
-================================ -->
-<section class="bg-white py-20">
-  <div class="max-w-screen-xl mx-auto px-4 text-center">
-
-    <h2 class="text-3xl md:text-4xl font-bold mb-10">บริการของเรา</h2>
-
-    <div class="grid md:grid-cols-3 gap-10">
-
-      <!-- Card -->
-      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl">
-        <img src="https://www.vnshealth.org/wp-content/smush-webp/2022/05/best-qualities-caregiving-1536x1024.jpg.webp" />
-        <div class="p-5 text-left">
-          <h3 class="text-xl font-semibold">เยี่ยมบ้าน</h3>
-          <p class="text-sky-600 font-medium">เริ่มต้น 500 บาท</p>
-          <p class="text-gray-600">ตรวจสุขภาพ, ให้ความรู้, พูดคุย</p>
-          <p class="text-gray-500 text-sm mt-2">กรุงเทพ</p>
+          <!-- Image -->
+          <div class="flex flex-col gap-2 md:w-[30%] items-end md:mt-5 md:mr-10">
+            <div class="w-full">
+              <img 
+                src="asstes/images/senior-care-profressional-hero.png"
+                class="rounded-[50px] md:rounded-bl-[150px] md:rounded-tl-[20%] md:rounded-br-[20%] md:rounded-tr-[50px] shadow-xl"
+              />
+            </div>
+            <div class="hidden md:block w-[60%]">
+              <img 
+                src="asstes/images/senior_community-2.png"
+                class="rounded-[50px] md:rounded-bl-[150px] md:rounded-tl-[20%] md:rounded-br-[20%] md:rounded-tr-[50px] shadow-xl"
+              />
+            </div>
+            <div class="hidden md:block w-[30%]">
+              <img 
+                src="asstes/images/senior_community-3.png"
+                class="rounded-[50px] md:rounded-bl-[150px] md:rounded-tl-[20%] md:rounded-br-[20%] md:rounded-tr-[50px] shadow-xl"
+              />
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Card -->
-      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl">
-        <img src="https://bucknerparkwayplace.org/wp-content/uploads/2023/03/What-Are-the-Duties-of-a-Respite-Caregiver.png" />
-        <div class="p-5 text-left">
-          <h3 class="text-xl font-semibold">บริการระยะสั้น</h3>
-          <p class="text-sky-600 font-medium">เริ่มต้น 600 บาท</p>
-          <p class="text-gray-600">ระยะเวลา 2 ชั่วโมงขึ้นไป</p>
-          <p class="text-gray-500 text-sm mt-2">กรุงเทพ</p>
+      </section>
+
+      <!-- ================================
+          SERVICES SECTION
+      ================================ -->
+      <section class="bg-[#FEFBF2] py-20 font-noto">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-10">บริการของเรา</h2>
+
+          <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- Card -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl">
+              <img src="https://www.vnshealth.org/wp-content/smush-webp/2022/05/best-qualities-caregiving-1536x1024.jpg.webp" />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-semibold">เยี่ยมบ้าน</h3>
+                <p class="text-sky-600 font-medium">เริ่มต้น 500 บาท</p>
+                <p class="text-gray-600">ตรวจสุขภาพ, ให้ความรู้, พูดคุย</p>
+                <p class="text-gray-500 text-sm mt-2">กรุงเทพ</p>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl">
+              <img src="https://bucknerparkwayplace.org/wp-content/uploads/2023/03/What-Are-the-Duties-of-a-Respite-Caregiver.png" />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-semibold">บริการระยะสั้น</h3>
+                <p class="text-sky-600 font-medium">เริ่มต้น 600 บาท</p>
+                <p class="text-gray-600">ระยะเวลา 2 ชั่วโมงขึ้นไป</p>
+                <p class="text-gray-500 text-sm mt-2">กรุงเทพ</p>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl">
+              <img src="https://assets.contenthub.wolterskluwer.com/api/public/content/b18f3052df5143139623db4bf6ba83ad?v=3ec1d82d&t=w768l" />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-semibold">บริการระยะยาว</h3>
+                <p class="text-sky-600 font-medium">เริ่มต้น 15,000 บาท</p>
+                <p class="text-gray-600">Caregiver ผ่านการอบรมครบถ้วน</p>
+                <p class="text-gray-500 text-sm mt-2">กรุงเทพ</p>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Card -->
-      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl">
-        <img src="https://assets.contenthub.wolterskluwer.com/api/public/content/b18f3052df5143139623db4bf6ba83ad?v=3ec1d82d&t=w768l" />
-        <div class="p-5 text-left">
-          <h3 class="text-xl font-semibold">บริการระยะยาว</h3>
-          <p class="text-sky-600 font-medium">เริ่มต้น 15,000 บาท</p>
-          <p class="text-gray-600">Caregiver ผ่านการอบรมครบถ้วน</p>
-          <p class="text-gray-500 text-sm mt-2">กรุงเทพ</p>
+
+      <!-- ================================
+          USERS REVIEW
+      ================================ -->
+      <section class="py-20">
+      
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold">Users Review</h2>
+          <p class="text-gray-600 mt-2 mb-10">What our users say about us</p>
+
+
+          <div class="grid md:grid-cols-3 gap-10">
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg pointer-events-auto">
+                <div class="text-4xl">🏠</div>
+                <h3 class="text-xl font-semibold mt-3">Feel Like Home</h3>
+                <p class="text-gray-600 mt-2">
+                    Caring team, warm atmosphere, trusted by families.
+                </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg pointer-events-auto">
+                <div class="text-4xl">👤</div>
+                <h3 class="text-xl font-semibold mt-3">Professional</h3>
+                <p class="text-gray-600 mt-2">
+                  Skilled caregivers with experience and dedication.
+                </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg pointer-events-auto">
+                <div class="text-4xl">❤️</div>
+                <h3 class="text-xl font-semibold mt-3">Lovely</h3>
+                <p class="text-gray-600 mt-2">
+                  Compassion and empathy in every service we deliver.
+                </p>
+            </div>
+
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ================================
-     USERS REVIEW
-================================ -->
-<section class="py-20">
- 
-  <div class="max-w-screen-xl mx-auto px-4 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold">Users Review</h2>
-    <p class="text-gray-600 mt-2 mb-10">What our users say about us</p>
-
-
-    <div class="grid md:grid-cols-3 gap-10">
-      <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg pointer-events-auto">
-          <div class="text-4xl">🏠</div>
-          <h3 class="text-xl font-semibold mt-3">Feel Like Home</h3>
-          <p class="text-gray-600 mt-2">
-              Caring team, warm atmosphere, trusted by families.
-          </p>
-      </div>
-
-      <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg pointer-events-auto">
-          <div class="text-4xl">👤</div>
-          <h3 class="text-xl font-semibold mt-3">Professional</h3>
-          <p class="text-gray-600 mt-2">
-            Skilled caregivers with experience and dedication.
-          </p>
-      </div>
-
-      <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg pointer-events-auto">
-          <div class="text-4xl">❤️</div>
-          <h3 class="text-xl font-semibold mt-3">Lovely</h3>
-          <p class="text-gray-600 mt-2">
-            Compassion and empathy in every service we deliver.
-          </p>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
-<!-- ================================
-     TOP CAREGIVER
-================================ -->
-<section class="py-20 bg-sky-50">
-  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-10 px-4 items-center">
+      <!-- ================================
+          TOP CAREGIVER
+      ================================ -->
+      <section class="py-20 bg-sky-50 font-inter">
+        <div class="max-w-screen-xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Top Caregiver</h2>
 
-    <!-- Image -->
-    <div>
-      <img 
-        src="https://www.isavta.co.il/content/migrated-a779904c62a810bcaef859555e16fdc2-592.jpg"
-        class="rounded-2xl shadow-lg"
-      />
-    </div>
+          <div class="grid md:grid-cols-2 gap-10 px-4 items-center">
+            <!-- Image -->
+            <div>
+              <img 
+                src="https://www.isavta.co.il/content/migrated-a779904c62a810bcaef859555e16fdc2-592.jpg"
+                class="rounded-2xl shadow-lg"
+              />
+            </div>
 
-    <!-- Text -->
-    <div>
-      <div class="text-5xl mb-2 text-sky-500">❝</div>
+            <!-- Text -->
+            <div>
+              <h3 class="text-2xl font-bold">Cameron Williamson</h3>
+              <p class="text-sky-600 font-medium mb-3">Caregiver</p>
 
-      <h3 class="text-2xl font-bold">Cameron Williamson</h3>
-      <p class="text-sky-600 font-medium mb-3">Top Caregiver</p>
+              <p class="text-gray-700 leading-relaxed">
+                Known for exceptional compassion and excellent service.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
 
-      <p class="text-gray-700 leading-relaxed">
-        Known for exceptional compassion and excellent service.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      </p>
-    </div>
-
-  </div>
-</section>
-
+        </div>
+      </section>
 
 
-<!-- ================================
-     WHY US
-================================ -->
-<section class="py-20">
-  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-14 px-4 items-center">
 
-    <!-- Text -->
-    <div>
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">ทำไมต้องเลือกเรา</h2>
+      <!-- ================================
+          WHY US
+      ================================ -->
+      <section class="py-20 font-noto">
+        <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-14 px-4 items-center">
 
-      <p class="text-gray-600 mb-6">
-        เรามีทีมผู้ดูแลที่ผ่านการอบรม พร้อมบริการคุณภาพสูงระดับมืออาชีพ
-      </p>
+          <!-- Text -->
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">ทำไมต้องเลือกเรา</h2>
 
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold">Trusted by Thousands</h3>
-        <p class="text-gray-600">บริการที่ได้รับความไว้วางใจจากครอบครัวทั่วประเทศ</p>
-      </div>
+            <p class="text-gray-600 mb-6">
+              เรามีทีมผู้ดูแลที่ผ่านการอบรม พร้อมบริการคุณภาพสูงระดับมืออาชีพ
+            </p>
 
-      <button class="bg-sky-500 text-white px-8 py-4 rounded-xl text-lg hover:bg-sky-600 pointer-events-auto">
-        Booking Now
-      </button>
-    </div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold">Trusted by Thousands</h3>
+              <p class="text-gray-600">บริการที่ได้รับความไว้วางใจจากครอบครัวทั่วประเทศ</p>
+            </div>
 
-    <!-- Image -->
-    <div>
-      <img
-        src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80"
-        class="rounded-2xl shadow-lg"
-      />
-    </div>
-  </div>
-</section>
+            <button class="bg-sky-500 text-white px-8 py-4 rounded-xl text-lg hover:bg-sky-600 pointer-events-auto">
+              Booking Now
+            </button>
+          </div>
+
+          <!-- Image -->
+          <div>
+            <img
+              src="asstes/images/caregiver_booking.png"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
 
 <!-- ================================
