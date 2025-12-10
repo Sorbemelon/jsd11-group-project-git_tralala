@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caregiver Services Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<!-- ================================
+     HEADER (Desktop + Mobile)
+================================ -->
+ <!-- Desktop Nav bra menu -->
+
+ <body class="w-screen bg-[#FFE5E8]">
+	<header class="mb-16 ">
+		<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter">
+			<div class="sm:ml-2 h-full min-w-16 hover:cursor-pointer">
+				<a href="index.html"><img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16"></a>
+			</div>
+			<div class="flex flex-col items-start min-w-64 m-2 hover:cursor-pointer">
+				<a href="index.html"><p class="text-3xl font-semibold text-zinc-800 ">Tralala Prima Care</p></a>
+				<a href="index.html"><p class="text-xl font-semibold text-zinc-600">For Senior</p></a>
+			</div>
+
+    <!--  Menu List-->
+			<ul class="hidden xl:flex ml-auto text-lg 2xl:text-xl font-medium text-zinc-600 font-noto h-full *:h-full">
+				<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">หน้าแรก</a></li>
+				<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">เกี่ยวกับเรา</a></li>
+				<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">บริการของเรา</a></li>
+				<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">เจ้าหน้าที่ของเรา</a></li>
+				<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">ติดต่อเรา</a></li>
+			</ul>
+
+    <!--  Mobile Navbar-->
+			<ul class="flex ml-auto gap-1 md:gap-4 sm:text-black-600 font-noto">
+				<li class="hidden sm:flex self-center text-center max-w-40 hover:cursor-pointer hover:font-bold"><img src="asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0"><span class="hidden md:block ml-2 md:text-base">086-858-8666</span></li>
+				<li class="flex self-center outline-1 p-2 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold"><img src="asstes/images/user 2.svg" class="w-full"></li>
+				<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100"><a href="">เข้าสู่ระบบ</a></li>
+			</ul>
+			<div class="ml-2 sm:ml-4 flex flex-col gap-2 xl:hidden self-center py-2 pr-4 text-2xl font-noto hover:cursor-pointer">
+				<div class="w-9 h-1 bg-black"></div>
+				<div class="w-9 h-1 bg-black"></div>
+				<div class="w-9 h-1 bg-black"></div>
+				<div class="group fixed w-full hover:w-70 hover:right-0">
+					<div class="h-[46px] bg-none"></div>
+					<ul class="group-hover:flex flex-col *:py-4 *:text-gray-800">
+						<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">หน้าแรก</a></li>
+						<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">เกี่ยวกับเรา</a></li>
+						<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">บริการของเรา</a></li>
+						<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">เจ้าหน้าที่ของเรา</a></li>
+						<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200 rounded-bl-3xl"><a href="">ติดต่อเรา</a></li>
+						</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+        <!-- Nav-bar-End -->
+
+		<!-- Product-card-Main-section -->
+
+<main class="w-full max-w-screen-2xl mx-auto mt-11 my-8 bg-white rounded-2xl shadow p-6">
+		<h2 class="text-2xl font-semibold mb-4">นานา จ๋าจ๋า</h2>
+		<div class="flex gap-3 justify-center">
+    		<img src="./asstes/images/p1-post2.png"
+         		class="w-100 h-125 object-cover rounded-xl" />
+
+		<div class="hidden md:block">
+			<div class="flex-col justify-evenly">
+				<div class="flex gap-3 w-1/2">
+				<img src="./asstes/images/p1-post1.png"
+						class="w-auto h-100 object-cover rounded-xl" />
+				<img src="./asstes/images/p1-post3.png"
+						class="w-50 h-100 object-cover rounded-xl" />
+				</div>
+			</div>
+			<div class="flex items-end justify-evenly mt-10">
+					<p class="text-lg font-medium">เริ่มต้น 300 THB</p>
+					<button class="bg-green-200 text-green-900 px-4 py-2 rounded-lg font-medium hover:bg-green-300">
+					จองบริการ
+					</button>
+			</div>
+		</div>
+		</div>
+		<div class="mt-10 block md:hidden">
+			<div class="flex justify-evenly">
+					<p class="text-lg font-medium">เริ่มต้น 300 THB</p>
+					<button class="bg-green-200 text-green-900 px-4 py-2 rounded-lg font-medium hover:bg-green-300">
+					จองบริการ
+					</button>
+			</div>
+		</div>
+
+  <!-- Overview -->
+		<div class="mt-8">
+			<h3 class="text-xl font-bold">Overview</h3>
+			<p class="text-sm text-gray-600 mt-3">
+				Eyebrow text to label this content.
+				Write a short introduction about the caregiver here.
+			</p>
+		</div>
+
+  <!-- Services -->
+	<div class="mt-8">
+		<h3 class="text-xl font-bold mb-3 ">Services</h3>
+		<div class="grid grid-cols-1 gap-4 text-gray-700 text-sm">
+		<div>
+			<p class="font-bold">บริการเยี่ยมเยื่อน/ไปนอกสถานที่</p>
+			<p class="text-xs text-gray-500">ช่วยติดตามสุขภาพ พาออกกำลังกาย หรือไปสถานพยาบาลบริการดูแลร่างกาย</p>
+		</div>
+		<div>
+			<p class="font-bold">บริการระยะสั้น</p>
+			<p class="text-xs text-gray-500">ฟื้นฟูและดูแลกิจกรรมประจำวัน เริ่มต้นรายชั่วโมง</p>
+		</div>
+		<div>
+			<p class="font-bold">บริการระยะยาว</p>
+			<p class="text-xs text-gray-500">ดูแลกิจกรรมประจำวัน พาออกกำลังกาย หรือไปสถานพยาบาล</p>
+		</div>
+		</div>
+	</div>
+
+  <!-- Review -->
+  	<div class="mt-8">
+    	<h3 class="text-xl font-bold mb-3">Review</h3>
+
+    	<div class="bg-gray-100 p-4 rounded-xl text-sm text-gray-700">
+			<p class="font-medium">Veolia Wrigxton</p>
+			<p class="text-xs text-gray-500 mb-2">ลูกค้าในกิจกรรม ElderHub</p>
+			<p>
+				I was completely blown away by the exceptional care and attention to detail.
+			</p>
+		</div>
+  	</div>
+
+  <!-- Booking Calendar  -->
+	<div class="mt-8">
+		<h3 class="text-xl font-bold mb-3">Booking</h3>
+
+    <!-- Booking Calendar Mobile  -->
+
+		<div class="block md:hidden">
+		<div class="flex-row justify-self-center items-center gap-2">
+				<div class="flex justify-center items-centers">
+				<img src="./asstes/images/calendar1.png"
+						class="w-400 h-auto object-cover rounded-xl " />
+				</div>
+				<div class="flex justify-evenly">
+					<p class="text-lg font-medium">เริ่มต้น 300 THB</p>
+					<button class="bg-green-200 text-green-900 px-4 py-2 rounded-lg font-medium hover:bg-green-300">
+					จองบริการ
+					</button>
+			</div>
+		</div>
+		</div>
+
+    <!-- Booking Calendar Desktop  -->
+
+		<div class="flex-col justify-evenlys hidden md:block gap-4">
+				<div class="flex justify-evenly">
+					<img src="./asstes/images/calendar1.png"
+						class="w-125 h-auto object-cover rounded-xl" />
+					<img src="./asstes/images/calendar2.png"
+						class="w-125 h-auto object-cover rounded-xl" />
+				</div>
+				<div class="flex justify-evenly my-4">
+					<p class="text-lg font-medium">เริ่มต้น 300 THB</p>
+					<button class="bg-green-200 text-green-900 px-4 py-2 rounded-lg font-medium hover:bg-green-300">
+					จองบริการ
+					</button>
+				</div>
+		</div>
+</main>
+
+<!-- ================================
+             Footer
+================================ -->
+
+        <footer class="relative bottom-0 w-full bg-white">
+			<section class="flex h-12 p-4 text-zinc-500">
+				<p>© 2025 Git Status Tralala. All rights reserved</p>
+				<div class="hidden sm:flex sm:gap-4 sm:ml-auto sm:mr-2">
+					<span class="hover:cursor-pointer">Terms</span>
+					<span class="hover:cursor-pointer">Privacy</span>
+				</div>
+			</section>
+		</footer>
+    </body>
+</html>
