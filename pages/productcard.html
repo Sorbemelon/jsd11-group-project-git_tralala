@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Order Confirmation</title>
+		<!-- Import google font - Noto Sans Thai, and Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+		<!-- Tailwindcss cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Tailwindcss @theme -->
+		<style type="text/tailwindcss">
+			@theme {
+				--font-noto: "Noto Sans Thai", sans-serif;
+				--font-inter: "Inter", sans-serif;
+			}
+        </style>
+	</head>
+
+	<body class="max-w-screen h-[calc(100dvh-112px)] bg-[#FFE5E8]">
+		<header class="mb-16">
+			<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter">
+				<!-- Logo and Name -->
+				<div class="h-full min-w-16 sm:ml-2 hover:cursor-pointer">
+					<a href="../index.html">
+						<img src="../asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16">
+					</a>
+				</div>
+				<div class="flex flex-col items-start m-2 md:min-w-64 hover:cursor-pointer">
+					<a href="../index.html">
+						<p class="text-xl font-semibold text-zinc-800 md:text-3xl">
+							Tralala Prima Care
+						</p>
+					</a>
+					<a href="../index.html">
+						<p class="text-lg font-semibold text-zinc-600">
+							For Senior
+						</p>
+					</a>
+				</div>
+				<!-- Extended Menu List -->
+				<ul class="hidden xl:flex h-full ml-auto text-lg font-medium text-zinc-600 font-noto 2xl:text-xl *:h-full">
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../index.html" class="h-full flex items-center">
+							หน้าแรก
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="about-us.html" class="h-full flex items-center">
+							เกี่ยวกับเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../index.html#service" class="h-full flex items-center">
+							บริการของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="productcard.html" class="h-full flex items-center">
+							ผู้ดูแลของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="" class="h-full flex items-center">
+							ติดต่อเรา
+						</a>
+					</li>
+				</ul>
+				<!-- Contact and Sign-in -->
+				<ul class="flex gap-1 ml-auto sm:text-black-600 md:gap-4 font-noto">
+					<li class="hidden sm:flex max-w-40 self-center text-center hover:font-bold hover:cursor-pointer">
+						<img src="../asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0">
+						<span class="hidden md:block ml-2 md:text-base">
+							086-858-8666
+						</span>
+					</li>
+					<li class="flex self-center outline-1 p-2 mr-2 md:mr-0 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold">
+						<img src="../asstes/images/user 2.svg" class="w-full">
+					</li>
+					<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100">
+						<a href="">
+							เข้าสู่ระบบ
+						</a>
+					</li>
+				</ul>
+				<!-- Hamburger Menu -->
+				<div class="flex flex-col gap-2 xl:hidden self-center ml-2 py-2 pr-4 text-2xl font-noto sm:ml-4 hover:cursor-pointer">
+					<div class="w-9 h-1 bg-black"></div>
+					<div class="w-9 h-1 bg-black"></div>
+					<div class="w-9 h-1 bg-black"></div>
+					<div class="group fixed top-0 h-16 w-full pt-5 hover:w-70 hover:right-0 *:hidden hover:*:block">
+						<div class="h-[46px] bg-none"></div>
+						<!-- Hidden Menu, Extend when Hover -->
+						<ul class="group-hover:flex flex-col *:py-4 *:text-gray-800">
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="../index.html">
+									หน้าแรก
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="about-us.html">
+									เกี่ยวกับเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="../index.html#service">
+									บริการของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="productcard.html">
+									ผู้ดูแลของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="">
+									ติดต่อเรา
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Navbar -->
+
+		<!-- Product-card-Main-section -->
+
+		<main class="min-h-full mx-4 md:mx-24 mt-24 mb-8 bg-white rounded-2xl shadow p-6 font-noto">
+			<h2 class="text-4xl font-semibold mb-8 text-center">นานา จ๋าจ๋า</h2>
+			<div class="flex flex-col lg:flex-row gap-6 justify-center">
+				<img src="./../asstes/images/p1-post2.png"
+					class="w-100 h-125 object-cover rounded-xl" />
+
+				<div class="flex flex-col">
+					<div class="hidden lg:flex flex-col justify-evenly">
+						<div class="flex gap-3">
+							<img src="./../asstes/images/p1-post1.png"
+									class="h-100 object-cover rounded-xl" />
+							<img src="./../asstes/images/p1-post3.png"
+									class="h-80 object-cover rounded-xl" />
+						</div>
+					</div>
+					<div class="flex md:flex-row-reverse justify-evenly mt-auto h-12">
+						<p class="text-xl font-medium self-center">เริ่มต้น 300 THB</p>
+						<a href="order.html">
+							<button class="h-full bg-green-200 text-green-900 w-30 rounded-xl text-xl font-medium hover:bg-green-300 hover:cursor-pointer">
+								จองบริการ
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col gap-8 md:w-[60%] mx-auto mt-8">
+		<!-- Overview -->
+				<div class="w-full">
+					<h3 class="text-2xl font-bold">Overview</h3>
+					<p class="text-sm text-gray-600 mt-3">
+						Eyebrow text to label this content.
+						Write a short introduction about the caregiver here.
+					</p>
+				</div>
+
+		<!-- Services -->
+				<div class="w-full">
+					<h3 class="text-2xl font-bold mb-3 ">Services</h3>
+					<div class="grid grid-cols-1 gap-4 text-gray-700 text-xl">
+						<div>
+							<p class="font-bold">บริการเยี่ยมเยื่อน/ไปนอกสถานที่</p>
+							<p class="text-base md:text-lg text-gray-500">ช่วยติดตามสุขภาพ พาออกกำลังกาย หรือไปสถานพยาบาลบริการดูแลร่างกาย</p>
+						</div>
+						<div>
+							<p class="text-base md:text-lg font-bold">บริการระยะสั้น</p>
+							<p class="text-lg text-gray-500">ฟื้นฟูและดูแลกิจกรรมประจำวัน เริ่มต้นรายชั่วโมง</p>
+						</div>
+						<div>
+							<p class="text-base md:text-lg font-bold">บริการระยะยาว</p>
+							<p class="text-lg text-gray-500">ดูแลกิจกรรมประจำวัน พาออกกำลังกาย หรือไปสถานพยาบาล</p>
+						</div>
+					</div>
+				</div>
+
+			<!-- Review -->
+				<div class="w-full">
+					<h3 class="text-2xl font-bold mb-3">Review</h3>
+
+					<div class="bg-gray-100 p-4 rounded-xl text-gray-700">
+						<p class="lg font-semibold">Veolia Wrigxton</p>
+						<p class="text-xs text-gray-500 mb-2">ลูกค้าในกิจกรรม ElderHub</p>
+						<p class="text-sm">
+							I was completely blown away by the exceptional care and attention to detail.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		<!-- Booking Calendar  -->
+			<div class="flex flex-col mt-8 w-fit mx-auto">
+				<h3 class="text-3xl font-bold mb-3">Booking</h3>
+
+			<!-- Booking Calendar Desktop  -->
+
+				<div class="flex-col justify-evenlys">
+					<div class="flex justify-evenly md:*:mx-6">
+						<img src="./../asstes/images/calendar1.png"
+							class="w-125 h-auto object-cover rounded-xl" />
+						<img src="./../asstes/images/calendar2.png"
+							class="hidden md:block w-125 h-auto object-cover rounded-xl" />
+					</div>
+					<div class="flex gap-4 justify-center mt-4 h-12">
+						<p class="text-xl font-medium self-center">เริ่มต้น 300 THB</p>
+						<a href="order.html">
+							<button class="h-full bg-green-200 text-green-900 w-30 rounded-xl text-xl font-medium hover:bg-green-300 hover:cursor-pointer">
+								จองบริการ
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	<!-- ================================
+				Footer
+	================================ -->
+
+		<footer class="relative bottom-0 w-full bg-white font-inter">
+			<section class="flex h-12 p-4 text-zinc-500">
+				<p>© 2025 Git Status Tralala. All rights reserved</p>
+				<div class="hidden sm:flex sm:gap-4 sm:ml-auto sm:mr-2">
+					<span class="hover:cursor-pointer">Terms</span>
+					<span class="hover:cursor-pointer">Privacy</span>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

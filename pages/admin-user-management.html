@@ -3,11 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>User Management</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">        <!-- Tailwindcss cdn -->
+		<title>Admin User Management</title>
+		<!-- Import google font - Noto Sans Thai, and Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+		<!-- Tailwindcss cdn -->
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Tailwindcss @theme -->
 		<style type="text/tailwindcss">
 			@theme {
 				--font-noto: "Noto Sans Thai", sans-serif;
@@ -15,45 +18,113 @@
 			}
         </style>
 	</head>
-	<body class="w-screen h-[calc(100dvh-112px)] bg-[#FFE5E8]">
+	<body class="max-w-screen h-[calc(100dvh-112px)] bg-[#FFE5E8]">
+		<!-- Navbar - Desktop & Mobile -->
 		<header class="mb-16">
 			<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter">
-				<div class="sm:ml-2 h-full min-w-16 hover:cursor-pointer">
-					<a href="index.html"><img src="asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16"></a>
+				<!-- Logo and Name -->
+				<div class="h-full min-w-16 sm:ml-2 hover:cursor-pointer">
+					<a href="../index.html">
+						<img src="../asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16">
+					</a>
 				</div>
-				<div class="flex flex-col items-start md:min-w-64 m-2 hover:cursor-pointer">
-					<a href="index.html"><p class="text-xl md:text-3xl font-semibold text-zinc-800">Tralala Prima Care</p></a>
-					<a href="index.html"><p class="text-lg font-semibold text-zinc-600">For Senior</p></a>
+				<div class="flex flex-col items-start m-2 md:min-w-64 hover:cursor-pointer">
+					<a href="../index.html">
+						<p class="text-xl font-semibold text-zinc-800 md:text-3xl">
+							Tralala Prima Care
+						</p>
+					</a>
+					<a href="../index.html">
+						<p class="text-lg font-semibold text-zinc-600">
+							For Senior
+						</p>
+					</a>
 				</div>
-				<ul class="hidden xl:flex ml-auto text-lg 2xl:text-xl font-medium text-zinc-600 font-noto h-full *:h-full">
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">หน้าแรก</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">เกี่ยวกับเรา</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">บริการของเรา</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">เจ้าหน้าที่ของเรา</a></li>
-					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black"><a href="" class="h-full flex items-center">ติดต่อเรา</a></li>
+				<!-- Extended Menu List -->
+				<ul class="hidden xl:flex h-full ml-auto text-lg font-medium text-zinc-600 font-noto 2xl:text-xl *:h-full">
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../index.html" class="h-full flex items-center">
+							หน้าแรก
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="about-us.html" class="h-full flex items-center">
+							เกี่ยวกับเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../index.html#service" class="h-full flex items-center">
+							บริการของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="" class="h-full flex items-center">
+							ผู้ดูแลของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="" class="h-full flex items-center">
+							ติดต่อเรา
+						</a>
+					</li>
 				</ul>
-				<ul class="flex ml-auto gap-1 md:gap-4 sm:text-black-600 font-noto">
-					<li class="hidden sm:flex self-center text-center max-w-40 hover:cursor-pointer hover:font-bold"><img src="asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0"><span class="hidden md:block ml-2 md:text-base">086-858-8666</span></li>
-					<li class="flex self-center outline-1 p-2 mr-2 md:mr-0 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold"><img src="asstes/images/user 2.svg" class="w-full"></li>
-					<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100"><a href="">เข้าสู่ระบบ</a></li>
+				<!-- Contact and Sign-in -->
+				<ul class="flex gap-1 ml-auto sm:text-black-600 md:gap-4 font-noto">
+					<li class="hidden sm:flex max-w-40 self-center text-center hover:font-bold hover:cursor-pointer">
+						<img src="../asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0">
+						<span class="hidden md:block ml-2 md:text-base">
+							086-858-8666
+						</span>
+					</li>
+					<li class="flex self-center outline-1 p-2 mr-2 md:mr-0 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold">
+						<img src="../asstes/images/user 2.svg" class="w-full">
+					</li>
+					<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100">
+						<a href="">
+							เข้าสู่ระบบ
+						</a>
+					</li>
 				</ul>
-				<div class="ml-2 sm:ml-4 flex flex-col gap-2 xl:hidden self-center py-2 pr-4 text-2xl font-noto hover:cursor-pointer">
+				<!-- Hamburger Menu -->
+				<div class="flex flex-col gap-2 xl:hidden self-center ml-2 py-2 pr-4 text-2xl font-noto sm:ml-4 hover:cursor-pointer">
 					<div class="w-9 h-1 bg-black"></div>
 					<div class="w-9 h-1 bg-black"></div>
 					<div class="w-9 h-1 bg-black"></div>
-					<div class="group fixed top-0 h-16 pt-5 w-full hover:w-70 hover:right-0 *:hidden hover:*:block">
+					<div class="group fixed top-0 h-16 w-full pt-5 hover:w-70 hover:right-0 *:hidden hover:*:block">
 						<div class="h-[46px] bg-none"></div>
+						<!-- Hidden Menu, Extend when Hover -->
 						<ul class="group-hover:flex flex-col *:py-4 *:text-gray-800">
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">หน้าแรก</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">เกี่ยวกับเรา</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">บริการของเรา</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200"><a href="">เจ้าหน้าที่ของเรา</a></li>
-							<li class="self-center text-center min-w-full hover:cursor-pointer hover:bg-pink-200 group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200 rounded-bl-3xl"><a href="">ติดต่อเรา</a></li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="../index.html">
+									หน้าแรก
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="about-us.html">
+									เกี่ยวกับเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="../index.html#service">
+									บริการของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="">
+									ผู้ดูแลของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="">
+									ติดต่อเรา
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
+		<!-- End Navbar -->
 		<main class="min-h-full">
             <section class="flex flex-col">
                 <div class="bg-white my-8 mx-auto w-[90%] rounded-[3rem] font-noto">
@@ -99,12 +170,12 @@
                             <div class="flex lg:hidden gap-4 *:h-10">
 								<div class="*:h-full">
 									<button class="flex w-10 rounded-full bg-white outline-1 outline-gray-300 hover:cursor-pointer hover:outline-indigo-500 active:bg-indigo-300">
-										<img src="asstes/images/search-icon.png" class="w-5 h-5 m-auto" />
+										<img src="../asstes/images/search-icon.png" class="w-5 h-5 m-auto" />
 									</button>
 								</div>
                                 <div>
 									<button class="flex w-15 h-full rounded-full bg-white outline-1 outline-gray-300 hover:cursor-pointer hover:outline-indigo-500 active:bg-indigo-300">
-										<img src="asstes/images/user 2.svg" class="w-5 h-5 my-auto ml-2 mr-1" />
+										<img src="../asstes/images/user 2.svg" class="w-5 h-5 my-auto ml-2 mr-1" />
 										<svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
 											<path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
 										</svg>
@@ -112,7 +183,7 @@
                                 </div>
                                 <div>
 									<button class="flex lg:hidden w-15 h-full rounded-full bg-white outline-1 outline-gray-300 hover:cursor-pointer hover:outline-indigo-500 active:bg-indigo-300">
-										<img src="asstes/images/status-icon.png" class="w-4 h-5 my-auto ml-3 mr-1" />
+										<img src="../asstes/images/status-icon.png" class="w-4 h-5 my-auto ml-3 mr-1" />
 										<svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
 											<path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
 										</svg>
@@ -120,7 +191,7 @@
                                 </div>
                                 <div class="grid grid-cols-1">
 									<button class="flex lg:hidden w-15 h-full rounded-full bg-white outline-1 outline-gray-300 hover:cursor-pointer hover:outline-indigo-500 active:bg-indigo-300">
-										<img src="asstes/images/calendar-icon.png" class="w-4 h-5 my-auto ml-3 mr-1" />
+										<img src="../asstes/images/calendar-icon.png" class="w-4 h-5 my-auto ml-3 mr-1" />
 										<svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true" class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4">
 											<path d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
 										</svg>
@@ -129,7 +200,7 @@
                             </div>
                             <div class="flex justify-between gap-4 *:h-10 xl:ml-auto mr-0">
                                 <button type="submit" class="flex w-fit rounded-full bg-indigo-100 px-4 py-2 font-semibold hover:bg-indigo-500 text-gray-900 outline-1 outline-indigo-300 hover:text-white hover:cursor-pointer">
-									<img src="asstes/images/export-icon.png" class="w-4 h-5 mr-2" />
+									<img src="../asstes/images/export-icon.png" class="w-4 h-5 mr-2" />
 									<p>Export</p>
 								</button>
                                 <button type="submit" class="flex gap-1 w-fit items-center rounded-full bg-indigo-600  px-4 py-2 font-semibold text-white hover:bg-indigo-500 focus-visible:outline-2 hover:cursor-pointer"><span class="text-3xl font-light mt-0.5 mr-1">+</span>เพิ่มผู้ใช้งาน</button>
@@ -141,8 +212,8 @@
 						<table class="max-w-full mx-4 table-auto">
 							<thead class=" bg-indigo-600 text-white">
 								<tr class="*:h-8 [&_th:not(:first-child):not(:last-child)]:text-left [&_:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:last-child)]:md:pl-2">
-									<th class="hidden sm:table-cell border-none items-center justify-center px-1">
-										<input type="checkbox" class="my-auto scale-125 accent-white">
+									<th class="hidden sm:table-cell border-none text-center px-1">
+										<input type="checkbox" class="mt-2 scale-125 accent-white">
 									</th>
 									<th class="w-9">
 										<p class="block sm:hidden w-9 text-end">ชื่อ-</p>
@@ -152,8 +223,8 @@
 											<p class="inline-block sm:hidden">สกุล</p>
 											<p class="hidden sm:inline-block">ชื่อ-สกุล</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -161,8 +232,8 @@
 										<div class="flex *:self-center">
 											<p>Email</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -170,8 +241,8 @@
 										<div class="flex *:self-center">
 											<p>Username</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -179,8 +250,8 @@
 										<div class="flex *:self-center">
 											<p>สถานะ</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -188,8 +259,8 @@
 										<div class="flex *:self-center">
 											<p>ประเภท</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -197,8 +268,8 @@
 										<div class="flex *:self-center">
 											<p>วันที่เข้าร่วม</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -206,8 +277,8 @@
 										<div class="flex *:self-center w-15 mx-auto">
 											<p>แก้ไข</p>
 											<div class="flex flex-col gap-1 w-3 ml-auto mr-2 right-0 *:hover:cursor-pointer">
-												<img src="asstes/images/Polygon 1.png" />
-												<img src="asstes/images/Polygon 2.png" />
+												<img src="../asstes/images/Polygon 1.png" />
+												<img src="../asstes/images/Polygon 2.png" />
 											</div>
 										</div>
 									</th>
@@ -220,7 +291,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>John Smith</td>
@@ -233,8 +304,8 @@
 									<td>Caregiver</td>
 									<td>March 12, 2023</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -243,7 +314,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Olivia Bennett</td>
@@ -256,8 +327,8 @@
 									<td>Caregiver</td>
 									<td>June 27, 2022</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -266,7 +337,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Daniel Warren</td>
@@ -279,8 +350,8 @@
 									<td>Caregiver</td>
 									<td>January 8, 2024</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -289,7 +360,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Chloe Hayes</td>
@@ -302,8 +373,8 @@
 									<td>Caregiver</td>
 									<td>October 5, 2021</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -312,7 +383,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Marcus Reed</td>
@@ -325,8 +396,8 @@
 									<td>Caregiver</td>
 									<td>February 19, 2023</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -335,7 +406,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Isabelle Clark</td>
@@ -348,8 +419,8 @@
 									<td>Caregiver</td>
 									<td>August 30, 2022</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -358,7 +429,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Lucas Mitchell</td>
@@ -371,8 +442,8 @@
 									<td>Caregiver</td>
 									<td>April 23, 2024</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -381,7 +452,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Mark Wilburg</td>
@@ -394,8 +465,8 @@
 									<td>Caregiver</td>
 									<td>November 14, 2020</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -404,7 +475,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Nicholas Agenn</td>
@@ -417,8 +488,8 @@
 									<td>Caregiver</td>
 									<td>July 6, 2023</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 								<tr class="*:h-10">
@@ -427,7 +498,7 @@
 									</td>
 									<td>
 										<div class="flex border-none justify-center">
-											<img src="asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
+											<img src="../asstes/images/user 2.svg" class="w-7 bg-indigo-100 rounded-full border border-indigo-300">
 										</div>
 									</td>
 									<td>Mia Nadinn</td>
@@ -440,8 +511,8 @@
 									<td>Caregiver</td>
 									<td>December 31, 2021</td>
 									<td class="flex gap-2 border-none justify-center items-center *:w-5  *:border-none">
-										<img src="asstes/images/PencilSimpleLine.png" />
-										<img src="asstes/images/Trash.png" />
+										<img src="../asstes/images/PencilSimpleLine.png" />
+										<img src="../asstes/images/Trash.png" />
 									</td>
 								</tr>
 							</tbody>
@@ -487,7 +558,7 @@
 				</div>
             </section>
 		</main>
-		<footer class="relative bottom-0 w-full bg-white">
+		<footer class="relative bottom-0 w-full bg-white font-inter">
 			<section class="flex h-12 p-4 text-zinc-500">
 				<p>© 2025 Git Status Tralala. All rights reserved</p>
 				<div class="hidden sm:flex sm:gap-4 sm:ml-auto sm:mr-2">

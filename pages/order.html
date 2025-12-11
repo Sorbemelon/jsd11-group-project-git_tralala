@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Shopping Cart</title>
+		<!-- Import google font - Noto Sans Thai, and Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+		<!-- Tailwindcss cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Tailwindcss @theme -->
+		<style type="text/tailwindcss">
+			@theme {
+				--font-noto: "Noto Sans Thai", sans-serif;
+				--font-inter: "Inter", sans-serif;
+			}
+		</style>
+	</head>
+	<body class="max-w-screen h-[calc(100dvh-112px)] bg-[#FFE5E8]">
+		<!-- Navbar - Desktop & Mobile -->
+		<header class="mb-16">
+			<nav class="flex items-center bg-[#FEFBF2] overflow-hidden fixed top-0 w-full h-16 md:justify-start font-inter z-99">
+				<!-- Logo and Name -->
+				<div class="h-full min-w-16 sm:ml-2 hover:cursor-pointer">
+					<a href="../index.html">
+						<img src="../asstes/images/tralala_shark_pic_logo_nobg.png" alt="icon logo" class=" w-16">
+					</a>
+				</div>
+				<div class="flex flex-col items-start m-2 md:min-w-64 hover:cursor-pointer">
+					<a href="../index.html">
+						<p class="text-xl font-semibold text-zinc-800 md:text-3xl">
+							Tralala Prima Care
+						</p>
+					</a>
+					<a href="../index.html">
+						<p class="text-lg font-semibold text-zinc-600">
+							For Senior
+						</p>
+					</a>
+				</div>
+				<!-- Extended Menu List -->
+				<ul class="hidden xl:flex h-full ml-auto text-lg font-medium text-zinc-600 font-noto 2xl:text-xl *:h-full">
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../index.html" class="h-full flex items-center">
+							หน้าแรก
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../pages/about-us.html" class="h-full flex items-center">
+							เกี่ยวกับเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="../index.html#service" class="h-full flex items-center">
+							บริการของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="productcard.html" class="h-full flex items-center">
+							ผู้ดูแลของเรา
+						</a>
+					</li>
+					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
+						<a href="" class="h-full flex items-center">
+							ติดต่อเรา
+						</a>
+					</li>
+				</ul>
+				<!-- Contact and Sign-in -->
+				<ul class="flex gap-1 ml-auto sm:text-black-600 md:gap-4 font-noto">
+					<li class="hidden sm:flex max-w-40 self-center text-center hover:font-bold hover:cursor-pointer">
+						<img src="../asstes/images/phone-call.svg" class="w-7 mr-2 md:mr-0">
+						<span class="hidden md:block ml-2 md:text-base">
+							086-858-8666
+						</span>
+					</li>
+					<li class="flex self-center outline-1 p-2 mr-2 md:mr-0 w-10 bg-white rounded-full hover:cursor-pointer hover:font-bold">
+						<img src="../asstes/images/user 2.svg" class="w-full">
+					</li>
+					<li class="hidden sm:flex self-center text-center outline-1 py-2 px-6 bg-white rounded-full xl:mr-6 font-bold text-sm md:text-lg hover:cursor-pointer hover:bg-yellow-100">
+						<a href="">
+							เข้าสู่ระบบ
+						</a>
+					</li>
+				</ul>
+				<!-- Hamburger Menu -->
+				<div class="flex flex-col gap-2 xl:hidden self-center ml-2 py-2 pr-4 text-2xl font-noto sm:ml-4 hover:cursor-pointer">
+					<div class="w-9 h-1 bg-black"></div>
+					<div class="w-9 h-1 bg-black"></div>
+					<div class="w-9 h-1 bg-black"></div>
+					<div class="group fixed top-0 h-16 w-full pt-5 hover:w-70 hover:right-0 *:hidden hover:*:block">
+						<div class="h-[46px] bg-none"></div>
+						<!-- Hidden Menu, Extend when Hover -->
+						<ul class="group-hover:flex flex-col *:py-4 *:text-gray-800">
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="../index.html">
+									หน้าแรก
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="pages/about-us.html">
+									เกี่ยวกับเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="index.html#service">
+									บริการของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="productcard.html">
+									ผู้ดูแลของเรา
+								</a>
+							</li>
+							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
+								<a href="">
+									ติดต่อเรา
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Navbar -->
+
+	<!-- ================================
+		Main SECTION
+	================================ -->
+
+		<main class="min-h-full mt-16 pb-4 md:px-20 md:pt-4 font-noto">
+		<div class="mx-5 mb-2 pt-4 md:mb-5">
+			<h1 class="text-4xl font-bold text-center md:text-start">ตะกร้าสินค้า</h1>
+			<p class="text-xl text-center text-wrap md:text-2xl md:text-start">
+				ตรวจสอบแพคเกจการดูแล<br class="md:hidden">และดำเนินการสั่งซื้อ
+			</p>
+		</div>
+
+		<!-- Head -->
+		<section class="flex mx-2 rounded-3xl bg-white/70">
+			<div class="w-full px-4 pt-4 pb-6">
+				<h2 class="text-2xl mb-2 font-semibold">รายการที่เลือก</h2>
+				<div class="grid gap-3">
+
+					<div class="grid grid-cols-[1.4fr_.6fr_.8fr_.8fr_.1fr] gap-3 items-center p-3 rounded-xl bg-white font-semibold shadow-sm">
+						<div class="pl-4 sm:justify-self-center lg:justify-self-start lg:pl-45">สินค้า</div>
+						<div class="justify-self-center md:justify-self-start md:pl-2">ราคา</div>
+						<div class="justify-self-center md:justify-self-start md:pl-10">จำนวน</div>
+						<div class="col-span-2 justify-self-center md:justify-self-start md:text-start">รวมทั้งหมด</div>
+					</div>
+
+					<!-- Product -->
+					<div class="grid grid-cols-[1.4fr_.6fr_.8fr_.8fr_.1fr] gap-3 items-center p-3 rounded-xl bg-white shadow-sm">
+						<div class="grid grid-cols-[96px_1fr] gap-3 items-center">
+							<div class="rounded-xl overflow-hidden bg-gray-100 hidden md:block">
+								<img src="./../asstes/images/p1-post2.png" class="w-24 h-auto" />
+							</div>
+							<div>
+								<h3 class="text-base font-semibold ">แพคเกจการดูแลระยะสั้น 3 ชั่วโมง</h3>
+								<p class="text-muted text-sm">ดูแลผู้สูงอายุ โดนผู้ผ่านการอบรมจากกรม</p>
+							</div>
+						</div>
+						<div class="font-bold">฿1,500</div>
+						<div class="">
+							<div class="flex flex-col-reverse md:flex-row w-fit items-center border shadow-sm rounded-full md:px-1 py-1 bg-white ">
+								<button class="w-7 h-7 rounded-full bg-gray-50 text-xl font-bold hover:bg-gray-100 hover:cursor-pointer">−</button>
+								<input type="number" value="1" class="w-12 pl-2 text-center font-bold border-none outline-none" />
+								<button class="w-7 h-7 rounded-full bg-white text-xl font-bold hover:bg-gray-100 hover:cursor-pointer">+</button>
+							</div>
+						</div>
+						<div class="font-bold col-span-2 text-center md:col-span-1 md:text-start md:pl-4">฿1,500</div>
+						<div class="text-right">
+							<button class="hidden md:block underline text-red-400 hover:cursor-pointer hover:text-red-600">ลบ</button>
+						</div>
+					</div>
+
+					<!-- Coupon -->
+					<div class="grid grid-cols-1 md:grid-cols-[1fr_.8fr] gap-4 mt-4">
+							<div class="rounded-xl p-4 bg-white shadow-sm">
+							<h3 class="text-lg font-semibold mb-2">คูปองส่วนลด</h3>
+							<form class="grid grid-cols-[1fr_auto] gap-2 mt-2">
+							<input type="text" placeholder="เช่น: SAVE5" class="border rounded-lg px-3 py-2 text-sm bg-sky-50 focus:outline focus:outline-offset-1 focus:outline-indigo-600" />
+							<button class="bg-pink-200 hover:bg-pink-600 text-black rounded px-4 py-2 font-bold hover:text-white hover:cursor-pointer">ใช้คูปอง</button>
+							</form>
+							<p class="text-muted text-sm mt-2">ตัวอย่างส่วนลด 5% สำหรับรหัสที่ร่วมรายการ</p>
+						</div>
+
+						<!-- Summary -->
+
+						<div class="rounded-xl p-4 bg-white shadow-sm">
+							<h3 class="text-lg font-semibold mb-2">สรุปยอดชำระ</h3>
+							<div class="space-y-2">
+								<div class="grid grid-cols-[1fr_auto]">
+								<dt class="text-muted">ยอดรวมสินค้า</dt>
+								<dd class="font-bold">฿1,500</dd>
+								</div>
+								<div class="grid grid-cols-[1fr_auto]"> 
+								<dt class="text-muted">ส่วนลดคูปอง (5%)</dt>
+								<dd class="font-bold">− ฿75</dd>
+								</div>
+								<div class="grid grid-cols-[1fr_auto]">
+								<dt class="font-bold text-text">รวมทั้งหมด</dt>
+								<dd class="bg-orange-50 border border-dashed border-accent rounded px-2 py-1 text-orange-800 font-bold">฿1,425</dd>
+								</div>
+							</div>
+							<a href="checkout.html">
+								<button class="w-full mt-4 bg-lime-200 outline outline-lime-400 text-gray-900 rounded-lg py-3 font-bold hover:bg-lime-500 hover:text-white hover:cursor-pointer">ดำเนินการสั่งซื้อ</button>
+							</a>
+							<p class="text-muted text-sm mt-2">การชำระเงินปลอดภัย รองรับบัตรเครดิต/เดบิต และโอนผ่านธนาคาร</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</main>
+
+	<!-- ================================
+		FOOTER
+	================================ -->
+		<footer class="relative bottom-0 w-full bg-white font-inter">
+			<section class="flex h-12 p-4 text-zinc-500">
+				<p>© 2025 Git Status Tralala. All rights reserved</p>
+				<div class="hidden sm:flex sm:gap-4 sm:ml-auto sm:mr-2">
+					<span class="hover:cursor-pointer">Terms</span>
+					<span class="hover:cursor-pointer">Privacy</span>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
