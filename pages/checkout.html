@@ -43,7 +43,7 @@
 				<!-- Extended Menu List -->
 				<ul class="hidden xl:flex h-full ml-auto text-lg font-medium text-zinc-600 font-noto 2xl:text-xl *:h-full">
 					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
-						<a href="" class="h-full flex items-center">
+						<a href="../index.html" class="h-full flex items-center">
 							หน้าแรก
 						</a>
 					</li>
@@ -58,7 +58,7 @@
 						</a>
 					</li>
 					<li class="min-w-16 px-2 2xl:px-6 hover:cursor-pointer hover:bg-yellow-100 hover:text-black">
-						<a href="" class="h-full flex items-center">
+						<a href="productcard.html" class="h-full flex items-center">
 							ผู้ดูแลของเรา
 						</a>
 					</li>
@@ -110,7 +110,7 @@
 								</a>
 							</li>
 							<li class="min-w-full self-center text-center hover:bg-pink-200 hover:cursor-pointer group-hover:bg-pink-50 group-hover:outline-1 outline-pink-200">
-								<a href="">
+								<a href="productcard.html">
 									ผู้ดูแลของเรา
 								</a>
 							</li>
@@ -169,20 +169,22 @@
 							</div>
 						</div>
 						<div class="px-6 sm:px-12">
-							<h2 class="text-2xl font-semibold text-indigo-900">รายการที่สั่งซื้อ</h2>
-							<div class="flex flex-col text-xl text-black">
-								<div class="flex flex-col md:flex-row w-full">
-									<span class="w-90 mr-2 my-1.5">1. บริการผู้ดูแลรายวัน x 5 วัน</span>
-									<span class="text-right rounded-md min-w-23 h-fit bg-blue-50 px-1 mt-2 ml-auto md:ml-0 text-base text-black outline-1 outline-gray-400">3,250 บาท</span>
-								</div>
-								<div class="flex flex-col md:flex-row w-full">
-									<span class="w-90 mr-2 my-1.5">2. บริการรับส่งผู้สูงอายุ x 3 วัน</span>
-									<span class="text-right rounded-md min-w-23 h-fit bg-blue-50 px-1 mt-2 ml-auto md:ml-0 text-base text-black outline-1 outline-gray-400">300 บาท</span>
-								</div>
-								<div class="flex w-full font-bold">
-									<span class="w-90 mr-2 my-1.5">รวม</span>
-									<span class="text-right rounded-md min-w-23 h-fit bg-blue-50 px-1 mt-2 text-base text-black outline-1 outline-gray-400">3,550 บาท</span>
-								</div>
+							<div class="rounded-xl p-4 bg-white shadow-sm">
+								<h3 class="text-2xl font-semibold text-indigo-900 mb-2">สรุปยอดชำระ</h3>
+								<dl class="space-y-2">
+									<div class="grid grid-cols-[1fr_auto]">
+									<dt class="text-muted">ยอดรวมสินค้า</dt>
+									<dd class="font-bold">฿1,500</dd>
+									</div>
+									<div class="grid grid-cols-[1fr_auto]"> 
+									<dt class="text-muted">ส่วนลดคูปอง (5%)</dt>
+									<dd class="font-bold">− ฿75</dd>
+									</div>
+									<div class="grid grid-cols-[1fr_auto]">
+									<dt class="font-bold text-text">รวมทั้งหมด</dt>
+									<dd class="bg-orange-50 border border-dashed border-accent rounded px-2 py-1 text-orange-800 font-bold">฿1,425</dd>
+									</div>
+								</dl>
 							</div>
 							<div class="flex flex-col mt-8 items-start gap-4 bg-gray-100 p-4 border-3 border-amber-300 rounded-xl">
 								<h2 class="text-2xl font-semibold text-indigo-900">เลือกวิธีการชำระเงิน</h2>
@@ -258,12 +260,14 @@
 						</div>
 					</div>
 					<div class="mt-2 mb-8">
-						<button class="block mx-auto mb-4 rounded-3xl bg-lime-200 px-3 py-2 text-xl font-semibold text-gray-800 outline-1 outline-lime-400 hover:cursor-pointer hover:bg-lime-500 hover:text-gray-100">ยืนยันคำสั่งซื้อ</button>
+						<a href="order-confirmation.html">
+							<button class="block mx-auto mb-4 rounded-3xl bg-lime-200 px-3 py-2 text-xl font-semibold text-gray-800 outline-1 outline-lime-400 hover:cursor-pointer hover:bg-lime-500 hover:text-gray-100">ยืนยันคำสั่งซื้อ</button>
+						</a>
 					</div>
                 </div>
             </section>
 		</main>
-		<footer class="relative bottom-0 w-full bg-white">
+		<footer class="relative bottom-0 w-full bg-white font-inter">
 			<section class="flex h-12 p-4 text-zinc-500">
 				<p>© 2025 Git Status Tralala. All rights reserved</p>
 				<div class="hidden sm:flex sm:gap-4 sm:ml-auto sm:mr-2">
